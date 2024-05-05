@@ -1,0 +1,7 @@
+name: workspace
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  melos: ^6.0.0
