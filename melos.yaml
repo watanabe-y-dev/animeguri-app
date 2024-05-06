@@ -6,7 +6,7 @@ packages:
 command:
   bootstrap:
     hooks:
-      post: dart pub run build_runner build --delete-conflicting-outputs
+      post: melos gen
       description: Runs build_runner after melos bootstrap
 
   clean:
