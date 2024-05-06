@@ -18,4 +18,5 @@ setup/flutter:
 
 setup/melos:
 	dart pub global activate melos
+	dart pub get
 	melos bootstrap
