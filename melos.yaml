@@ -1,0 +1,38 @@
+name: animeguri
+
+packages:
+  - packages/**
+
+command:
+  bootstrap:
+    hooks:
+      post: dart pub run build_runner build --delete-conflicting-outputs
+      description: Runs build_runner after melos bootstrap
+
+  clean:
+    hooks:
+      post: melos exec -c 4 -- "flutter clean"
+      description: Runs flutter clean after melos clean
+
+scripts:
+  get:
+    run: melos exec -c 4 -- "flutter pub get"
+    description: Runs flutter pub get
+
+  gen:
+    run: melos gen:all --no-select
+    description: Runs gen:all
+
+  gen:all:
+    run: melos exec -c 4 -- "flutter pub run build_runner build --delete-conflicting-outputs"
+    description: Runs build_runner build
+    packageFilters:
+      dependsOn: build_runner
+
+  watch:
+    run: melos watch:all
+    description: Runs watch:all
+
+  watch:all:
+    run: melos exec -c 4 -- "flutter pub run build_runner watch --delete-conflicting-outputs"
+    description: Runs build_runner watch

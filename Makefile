@@ -1,10 +1,12 @@
 .PHONY: bootstrap
 .PHONY: check/tools
 .PHONY: setup/flutter
+.PHONY: setup/melos
 
-bootstrap:
+init:
 	make check/tools
 	make setup/flutter
+	make setup/melos
 
 # TODO: asdf がインストールされていない場合はインストールする
 check/tools:
@@ -13,3 +15,7 @@ check/tools:
 setup/flutter:
 	asdf plugin add flutter
 	asdf install flutter
+
+setup/melos:
+	dart pub global activate melos
+	melos bootstrap

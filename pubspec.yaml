@@ -1,7 +1,7 @@
-name: workspace
+name: project
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
 
-dependencies:
+dev_dependencies:
   melos: ^6.0.0
