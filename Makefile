@@ -10,7 +10,7 @@ init:
 
 # TODO: asdf がインストールされていない場合はインストールする
 check/tools:
-	./scripts/check_tools.sh
+	./scripts/check_required_tools.sh
 
 setup/flutter:
 	asdf plugin add flutter
