@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:presentation/theme/material_theme.dart';
+import 'package:presentation/theme/theme.dart';
 
 class AppThemeData {
   AppThemeData({
@@ -32,7 +32,7 @@ class AppThemeData {
 }
 
 extension on ColorScheme {
-  BottomAppBarTheme get bottomAppBarTheme => BottomAppBarTheme(
+  BottomAppBarTheme get bottomAppBarTheme => const BottomAppBarTheme(
     color: Colors.red,
     elevation: 16,
   );

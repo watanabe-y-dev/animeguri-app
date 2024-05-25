@@ -3,13 +3,15 @@ import 'package:flutter/material.dart';
 
 @RoutePage()
 class AccountPage extends StatelessWidget {
+  const AccountPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Account'),
+        title: const Text('Account'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Account Page'),
       ),
     );
