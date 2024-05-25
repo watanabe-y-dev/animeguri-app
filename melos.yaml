@@ -16,8 +16,8 @@ command:
 
 scripts:
   get:
-    run: melos exec -c 4 -- "flutter pub get"
-    description: Runs flutter pub get
+    run: melos exec -c 4 -- "flutter pub get" && melos gen
+    description: Runs flutter pub get and melos gen
 
   gen:
     run: melos gen:all --no-select
@@ -30,7 +30,7 @@ scripts:
       dependsOn: build_runner
 
   watch:
-    run: melos watch:all
+    run: melos gen && melos watch:all
     description: Runs watch:all
 
   watch:all:
