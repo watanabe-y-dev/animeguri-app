@@ -6,13 +6,15 @@ import 'package:presentation/hook/app_theme.dart';
 
 @RoutePage()
 class RootPage extends HookWidget {
+  const RootPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     final theme = useAppTheme();
     final color = theme.colorScheme;
 
     return AutoTabsRouter(
-      routes: [
+      routes: const [
         HomeRoute(),
         AccountRoute(),
       ],
@@ -25,7 +27,6 @@ class RootPage extends HookWidget {
               border: Border(
                 top: BorderSide(
                   color: color.outlineVariant,
-                  width: 1.0,
                 ),
               ),
             ),

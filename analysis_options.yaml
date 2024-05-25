@@ -1,0 +1,21 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    # pubspec.yaml の定義順に関する警告
+    sort_pub_dependencies: false
+    # TODOの書き方に関する警告
+    flutter_style_todos: false
+    # ドキュメント作成の必須化に関する警告
+    public_member_api_docs: false
+    # required パラメータを先頭に置くことに関する警告
+    always_put_required_named_parameters_first: false
+    # on 句のないキャッチに関する警告
+    avoid_catches_without_on_clauses: true
+
+analyzer:
+  exclude:
+    - "**/*.freezed.dart"
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "packages/presentation/lib/theme/theme.dart"
