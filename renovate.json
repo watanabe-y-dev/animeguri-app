@@ -16,6 +16,9 @@
   "patch": {
     "minimumReleaseAge": "3 days"
   },
+  "schedule": [
+    "before 9am on saturday"
+  ],
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
