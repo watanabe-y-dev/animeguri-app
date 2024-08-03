@@ -6,7 +6,9 @@ packages:
 command:
   bootstrap:
     hooks:
-      post: melos gen
+      post: |
+        melos exec -c 4 --file-exists="pubspec_overrides.yaml" -- "rm pubspec_overrides.yaml"
+        melos gen
       description: Runs build_runner after melos bootstrap
 
   clean:

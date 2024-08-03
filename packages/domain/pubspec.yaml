@@ -1,8 +1,5 @@
 name: domain
 description: 'Domain layer for animeguri.'
-version: 0.0.1
-
-publish_to: 'none'
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
@@ -10,8 +7,11 @@ environment:
 dependencies:
   # Local packages
   foundation:
+    path: ../foundation
   model:
+    path: ../model
   presentation:
+    path: ../presentation
 
 dev_dependencies:
   build_runner: ^2.4.9
