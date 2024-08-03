@@ -12,15 +12,10 @@ dependencies:
 
   # Local packages
   data:
-    path: ../data
   domain:
-    path: ../domain
   foundation:
-    path: ../foundation
   model:
-    path: ../model
   presentation:
-    path: ../presentation
 
   cupertino_icons: ^1.0.6
 
