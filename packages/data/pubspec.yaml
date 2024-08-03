@@ -7,13 +7,9 @@ environment:
 dependencies:
   # Local packages
   domain:
-    path: ../domain
   foundation:
-    path: ../foundation
   model:
-    path: ../model
   presentation:
-    path: ../presentation
 
 dev_dependencies:
   build_runner: ^2.4.9
