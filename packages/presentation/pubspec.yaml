@@ -1,6 +1,5 @@
 name: presentation
 description: "Presentation layer for animeguri."
-version: 0.0.1
 
 environment:
   sdk: '>=3.3.4 <4.0.0'

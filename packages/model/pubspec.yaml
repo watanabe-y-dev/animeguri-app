@@ -1,8 +1,5 @@
 name: model
 description: 'Model for animeguri.'
-version: 0.0.1
-
-publish_to: 'none'
 
 environment:
   sdk: '>=3.3.4 <4.0.0'

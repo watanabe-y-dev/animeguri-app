@@ -6,7 +6,8 @@ packages:
 command:
   bootstrap:
     hooks:
-      post: melos gen
+      post: |
+        melos gen
       description: Runs build_runner after melos bootstrap
 
   clean:
