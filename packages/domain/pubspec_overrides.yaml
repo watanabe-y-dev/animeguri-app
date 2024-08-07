@@ -1,8 +1,0 @@
-# melos_managed_dependency_overrides: foundation,model,presentation
-dependency_overrides:
-  foundation:
-    path: ../foundation
-  model:
-    path: ../model
-  presentation:
-    path: ../presentation
