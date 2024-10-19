@@ -2,6 +2,7 @@ plugins {
     id "com.android.application"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"
 }
 
 def localProperties = new Properties()
@@ -22,10 +23,40 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+def defines = []
+if (project.hasProperty('dart-defines')) {
+    defines = project.property('dart-defines')
+            .split(',')
+            .collectEntries { entry ->
+                def pair = new String(entry.decodeBase64(), 'UTF-8').split('=')
+                [(pair.first()): pair.last()]
+            }
+}
+
+task copyGoogleServicesJson {
+    doFirst {
+        copy {
+            from "config/${defines.BUILD_ENV}/google-services.json"
+            into './'
+        }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    // processDebugGoogleServices などが実行される前に google-services.json をコピーする
+    if (task.name.contains('GoogleServices')) {
+        task.dependsOn copyGoogleServicesJson
+    }
+}
+
 android {
     namespace "io.github.watanabeyudai.animeguri.app"
     compileSdk flutter.compileSdkVersion
-    ndkVersion flutter.ndkVersion
+    // ndkVersion flutter.ndkVersion
+
+    // ビルド時に警告が出るのでバージョンを手動で指定
+    // Flutter のアップデートによって直る可能性もあるので様子を見る
+    ndkVersion "26.1.10909125"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -41,13 +72,15 @@ android {
     }
 
     defaultConfig {
-        applicationId "io.github.watanabeyudai.animeguri.app"
+        applicationId defines.APP_ID
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion 26
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+
+        manifestPlaceholders.appName = defines.APP_NAME
     }
 
     buildTypes {
