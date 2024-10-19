@@ -43,10 +43,6 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# pubspec_overrides を使わずに pubspec.yaml に直接依存関係を書きたいが
-# melos が生成する .iml ファイルの影響でパス指定でエラーが出るため pubspec_overrides を使用する
-# **/pubspec_overrides.yaml
-
 # build_runner
 **/*.freezed.dart
 **/*.g.dart
