@@ -16,7 +16,7 @@ dependencies:
     path: ../model
 
   auto_route: ^9.0.0
-  flutter_hooks: ^0.20.5
+  flutter_hooks: ^0.21.0
 
 dev_dependencies:
   build_runner: ^2.4.9
