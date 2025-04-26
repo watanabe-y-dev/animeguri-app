@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug DEV",
+            "cwd": "packages/app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define-from-file=env/.dev.env"
+            ]
+        },
+        {
+            "name": "Debug PRD",
+            "cwd": "packages/app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define-from-file=env/.prd.env"
+            ]
+        }
+    ]
+}

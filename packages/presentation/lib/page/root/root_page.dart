@@ -24,11 +24,13 @@ class RootPage extends HookWidget {
           body: child,
           bottomNavigationBar: Container(
             decoration: BoxDecoration(
-              border: Border(
-                top: BorderSide(
-                  color: color.outlineVariant,
+              boxShadow: [
+                BoxShadow(
+                  color: color.shadow.withAlpha(8),
+                  blurRadius: 4,
+                  offset: const Offset(0, -4),
                 ),
-              ),
+              ],
             ),
             child: BottomNavigationBar(
               currentIndex: tabsRouter.activeIndex,
