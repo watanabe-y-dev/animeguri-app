@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:presentation/theme/app_typography.dart';
 import 'package:presentation/theme/theme.dart';
 
 class AppThemeData {
@@ -20,7 +21,7 @@ class AppThemeData {
   factory AppThemeData.light() {
     return AppThemeData(
       colorScheme: MaterialTheme.lightScheme().toColorScheme(),
-      textTheme: Typography.material2021().black,
+      textTheme: const AppTextTheme().black,
     );
   }
 

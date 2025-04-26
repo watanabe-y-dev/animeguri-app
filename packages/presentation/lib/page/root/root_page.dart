@@ -1,8 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:presentation/export/router.dart';
 import 'package:presentation/hook/app_theme.dart';
+import 'package:presentation/router/app_router.dart';
 
 @RoutePage()
 class RootPage extends HookWidget {
@@ -24,11 +24,13 @@ class RootPage extends HookWidget {
           body: child,
           bottomNavigationBar: Container(
             decoration: BoxDecoration(
-              border: Border(
-                top: BorderSide(
-                  color: color.outlineVariant,
+              boxShadow: [
+                BoxShadow(
+                  color: color.shadow.withAlpha(8),
+                  blurRadius: 4,
+                  offset: const Offset(0, -4),
                 ),
-              ),
+              ],
             ),
             child: BottomNavigationBar(
               currentIndex: tabsRouter.activeIndex,

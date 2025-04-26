@@ -20,5 +20,11 @@ class AppRouter extends RootStackRouter {
             ),
           ],
         ),
+        AutoRoute(
+          page: DebugHomeRoute.page,
+        ),
+        AutoRoute(
+          page: DebugTypographyRoute.page,
+        ),
       ];
 }
