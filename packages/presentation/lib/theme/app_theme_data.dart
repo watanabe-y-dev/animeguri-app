@@ -34,7 +34,7 @@ class AppThemeData {
 
 extension on ColorScheme {
   BottomAppBarTheme get bottomAppBarTheme => const BottomAppBarTheme(
-    color: Colors.red,
-    elevation: 16,
-  );
+        color: Colors.red,
+        elevation: 16,
+      );
 }

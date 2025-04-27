@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class Space extends StatelessWidget {
-  
   const Space.xxs({super.key}) : value = 2;
   const Space.xs({super.key}) : value = 4;
   const Space.sm({super.key}) : value = 8;
