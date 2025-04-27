@@ -17,7 +17,7 @@ service cloud.firestore {
       allow create, update, delete: if request.auth != null;
     }
     // アニメ情報
-    match /anime/{animeId} {
+    match /animes/{animeId} {
       allow read: if true;
       allow create, update, delete: if request.auth != null;
     }

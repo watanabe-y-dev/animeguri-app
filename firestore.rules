@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.time < timestamp.date(2025, 5, 27);
+    }
+
+    // スポット情報
+    match /spots/{spotId} {
+      allow read: if resource.data.isPublished == true || request.auth != null;
+      allow create, update, delete: if request.auth != null;
+    }
+    // アニメ情報
+    match /animes/{animeId} {
+      allow read: if true;
+      allow create, update, delete: if request.auth != null;
+    }
+  }
+}

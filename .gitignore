@@ -50,3 +50,6 @@ app.*.map.json
 
 # MCP
 .cursor/mcp.json
+
+# Firebase
+.firebaserc

@@ -2,7 +2,7 @@
 
 ## 1. コレクション名
 - 観光スポット（聖地）: `spots`
-- アニメ: `anime`
+- アニメ: `animes`
 
 ---
 
@@ -27,7 +27,7 @@
 }
 ```
 
-### anime コレクションのドキュメント例
+### animes コレクションのドキュメント例
 ```json
 {
   "id": "anime_001",
@@ -46,7 +46,7 @@
 ---
 
 ## 3. 設計意図・補足
-- コレクション名は複数形で統一（spots, anime）
+- コレクション名は複数形で統一（spots, animes）
 - ドキュメントIDは自動生成または明示指定
 - 多対多リレーションはID配列（animeIds, spotIds）で管理
 - Firestoreの型（string, array, map, timestamp, geopoint）に準拠
