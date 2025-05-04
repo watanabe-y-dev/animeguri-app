@@ -12,6 +12,8 @@ linter:
     always_put_required_named_parameters_first: false
     # on 句のないキャッチに関する警告
     avoid_catches_without_on_clauses: true
+    # 抽象クラスの警告
+    one_member_abstracts: false
 
 analyzer:
   exclude:

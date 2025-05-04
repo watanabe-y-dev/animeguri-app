@@ -1,14 +1,15 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'spot.freezed.dart';
+part 'spot_api_model.freezed.dart';
+part 'spot_api_model.g.dart';
 
 @freezed
-abstract class Spot with _$Spot {
-  const factory Spot({
+abstract class SpotApiModel with _$SpotApiModel {
+  const factory SpotApiModel({
     required String id,
     required String name,
     required String description,
-    required Location location,
+    required LocationApiModel location,
     required List<String> imageUrls,
     required String category,
     required String address,
@@ -18,13 +19,19 @@ abstract class Spot with _$Spot {
     required DateTime createdAt,
     required DateTime updatedAt,
     required bool isPublished,
-  }) = _Spot;
+  }) = _SpotApiModel;
+
+  factory SpotApiModel.fromJson(Map<String, Object?> json) =>
+      _$SpotApiModelFromJson(json);
 }
 
 @freezed
-abstract class Location with _$Location {
-  const factory Location({
+abstract class LocationApiModel with _$LocationApiModel {
+  const factory LocationApiModel({
     required double latitude,
     required double longitude,
-  }) = _Location;
+  }) = _LocationApiModel;
+
+  factory LocationApiModel.fromJson(Map<String, Object?> json) =>
+      _$LocationApiModelFromJson(json);
 }
