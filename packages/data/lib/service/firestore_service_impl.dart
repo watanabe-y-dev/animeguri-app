@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:data/foundation/collection.dart';
 import 'package:data/service/firestore_service.dart';
 
 class FirestoreServiceImpl implements FirestoreService {
@@ -9,20 +10,28 @@ class FirestoreServiceImpl implements FirestoreService {
 
   @override
   Future<Map<String, dynamic>> getDocument({
-    required String collection,
+    required Collection collection,
     required String id,
   }) async {
-    final snapshot =
-        await FirebaseFirestore.instance.collection(collection).get();
-    return snapshot.docs.firstWhere((doc) => doc.id == id).data();
+    try {
+      final snapshot =
+          await FirebaseFirestore.instance.collection(collection.name).get();
+      return snapshot.docs.firstWhere((doc) => doc.id == id).data();
+    } catch (e) {
+      throw Exception(e);
+    }
   }
 
   @override
   Future<List<Map<String, dynamic>>> getDocuments({
-    required String collection,
+    required Collection collection,
   }) async {
-    final snapshot =
-        await FirebaseFirestore.instance.collection(collection).get();
-    return snapshot.docs.map((doc) => doc.data()).toList();
+    try {
+      final snapshot =
+          await FirebaseFirestore.instance.collection(collection.name).get();
+      return snapshot.docs.map((doc) => doc.data()).toList();
+    } catch (e) {
+      throw Exception(e);
+    }
   }
 }
