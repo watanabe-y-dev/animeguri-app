@@ -15,6 +15,12 @@ dependencies:
   presentation:
     path : ../presentation
 
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
+  cloud_firestore: ^5.6.6
+
 dev_dependencies:
   build_runner: ^2.4.9
   very_good_analysis: ^7.0.0
+  freezed: ^3.0.6
+  json_serializable: ^6.9.5
