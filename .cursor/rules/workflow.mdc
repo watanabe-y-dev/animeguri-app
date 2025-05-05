@@ -1,7 +1,7 @@
 ---
-description:
-globs:
-alwaysApply: true
+description: 
+globs: 
+alwaysApply: false
 ---
 ## ワークフローについて
 
@@ -16,8 +16,8 @@ alwaysApply: true
 ## タスク分割について
 
 このプロジェクトには `issues/` というディレクトリが存在します。
-タスクを分解するときは `issues/issue-[id]/tasks.md` というファイルを作成して管理してください。`id` には対象となる Issue の ID が入ります。
-`tasks.md` を作成するときは `issues/issue-template/tasks.md` ファイルを参照して同じフォーマットで作成してください。
+タスクを分解するときは `issues/issue-[id]/task-table.md` というファイルを作成して管理してください。`id` には対象となる Issue の ID が入ります。
+`task-table.md` を作成するときは `issues/issue-template/task-table.md` ファイルを参照して同じフォーマットで作成してください。
 
 ## メモについて
 
@@ -25,8 +25,8 @@ alwaysApply: true
 
 ## タスク開始時やること
 
-`issues/issue-template/tasks.md` のテンプレートには各タスクのステータスを管理する項目が存在します。タスクに取り掛かる場合は最初にステータスを「進行中」に変更してください。
+`issues/issue-template/task-table.md` のテンプレートには各タスクのステータスを管理する項目が存在します。タスクに取り掛かる場合は最初にステータスを「進行中」に変更してください。
 
 ## タスク完了後にやること
 
-`issues/issue-template/tasks.md` のテンプレートには各タスクのステータスを管理する項目が存在します。タスクが完了した場合はステータスを「完了」に変更してください。
+`issues/issue-template/task-tabel.md` のテンプレートには各タスクのステータスを管理する項目が存在します。タスクが完了した場合はステータスを「完了」に変更してください。

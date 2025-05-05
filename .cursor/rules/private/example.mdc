@@ -1,0 +1,6 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+<!--プロジェクトで共有する必要のないルールは private ディレクトリに作成してください。 -->
