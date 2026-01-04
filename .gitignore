@@ -57,3 +57,4 @@ app.*.map.json
 # Cursor
 .cursor/rules/private/**
 !.cursor/rules/private/example.mdc
+.vscode/

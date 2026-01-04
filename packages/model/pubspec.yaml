@@ -1,8 +1,11 @@
 name: model
 description: 'Model for animeguri.'
+publish_to: 'none'
 
 environment:
-  sdk: '>=3.3.4 <4.0.0'
+  sdk: ^3.10.4
+
+resolution: workspace
 
 dependencies:
   freezed_annotation: ^3.0.0
@@ -10,6 +13,6 @@ dependencies:
 
 dev_dependencies:
   build_runner: ^2.4.9
-  very_good_analysis: ^9.0.0
+  very_good_analysis: ^10.0.0
   freezed: ^3.0.6
   json_serializable: ^6.9.5
