@@ -18,7 +18,7 @@ dependencies:
   model:
     path: ../model
 
-  auto_route: ^10.0.0
+  auto_route: 11.1.0
   flutter_hooks: ^0.21.0
   gap: ^3.0.1
   collection: ^1.18.0
