@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:presentation/export/page.dart';
+import 'package:ui/export/page.dart';
 
 part 'app_router.gr.dart';
 

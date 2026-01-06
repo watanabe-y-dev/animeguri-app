@@ -2,12 +2,12 @@ import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:gap/gap.dart';
-import 'package:presentation/component/list/divided_column.dart';
-import 'package:presentation/component/text/body.dart';
-import 'package:presentation/component/text/display.dart';
-import 'package:presentation/component/text/headline.dart';
-import 'package:presentation/component/text/label.dart';
-import 'package:presentation/component/text/title.dart';
+import 'package:ui/component/list/divided_column.dart';
+import 'package:ui/component/text/body.dart';
+import 'package:ui/component/text/display.dart';
+import 'package:ui/component/text/headline.dart';
+import 'package:ui/component/text/label.dart';
+import 'package:ui/component/text/title.dart';
 
 @RoutePage()
 class DebugTypographyPage extends HookWidget {

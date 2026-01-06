@@ -1,9 +1,9 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:presentation/hook/router.dart';
-import 'package:presentation/page/home/sopt_list_item.dart';
-import 'package:presentation/router/app_router.dart';
+import 'package:ui/hook/router.dart';
+import 'package:ui/page/home/sopt_list_item.dart';
+import 'package:ui/router/app_router.dart';
 
 // 仮のデータ（実際はAPIやデータベースから取得）
 final spots = [

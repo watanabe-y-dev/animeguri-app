@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:presentation/component/space/space.dart';
-import 'package:presentation/component/text/body.dart';
-import 'package:presentation/component/text/title.dart';
-import 'package:presentation/hook/app_theme.dart';
-import 'package:presentation/theme/app_theme_data.dart';
+import 'package:ui/component/space/space.dart';
+import 'package:ui/component/text/body.dart';
+import 'package:ui/component/text/title.dart';
+import 'package:ui/hook/app_theme.dart';
+import 'package:ui/theme/app_theme_data.dart';
 
 class SpotListItem extends HookWidget {
   const SpotListItem({

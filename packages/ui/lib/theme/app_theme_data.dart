@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:presentation/theme/app_typography.dart';
-import 'package:presentation/theme/theme.dart';
+import 'package:ui/theme/app_typography.dart';
+import 'package:ui/theme/theme.dart';
 
 class AppThemeData {
   AppThemeData({

@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:presentation/hook/app_theme.dart';
+import 'package:ui/hook/app_theme.dart';
 
-class BodyLarge extends HookWidget {
-  const BodyLarge(
+class HeadlineLarge extends HookWidget {
+  const HeadlineLarge(
     this.data, {
     super.key,
     this.color,
@@ -15,18 +15,17 @@ class BodyLarge extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final theme = useAppTheme();
-
     return Text(
       data,
-      style: theme.textTheme.bodyLarge?.copyWith(
+      style: theme.textTheme.headlineLarge?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );
   }
 }
 
-class BodyMedium extends HookWidget {
-  const BodyMedium(
+class HeadlineMedium extends HookWidget {
+  const HeadlineMedium(
     this.data, {
     super.key,
     this.color,
@@ -41,15 +40,15 @@ class BodyMedium extends HookWidget {
 
     return Text(
       data,
-      style: theme.textTheme.bodyMedium?.copyWith(
+      style: theme.textTheme.headlineMedium?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );
   }
 }
 
-class BodySmall extends HookWidget {
-  const BodySmall(
+class HeadlineSmall extends HookWidget {
+  const HeadlineSmall(
     this.data, {
     super.key,
     this.color,
@@ -64,7 +63,7 @@ class BodySmall extends HookWidget {
 
     return Text(
       data,
-      style: theme.textTheme.bodySmall?.copyWith(
+      style: theme.textTheme.headlineSmall?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );
