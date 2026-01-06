@@ -6,11 +6,11 @@ import 'package:ui/page/home/sopt_list_item.dart';
 import 'package:ui/router/app_router.dart';
 
 // 仮のデータ（実際はAPIやデータベースから取得）
-final spots = [
+final List<Map<String, dynamic>> spots = [
   {
     'title': '瀧と三葉が再会した階段',
-    'description':
-        'この階段は「君の名は。」のポスター等のキービジュアルとして使用されている場所でもあり、映画の最後のシーンで瀧と三葉が再会した場所でもあります。',
+    'description': 'この階段は「君の名は。」のポスター等のキービジュアルとして'
+        '使用されている場所でもあり、映画の最後のシーンで瀧と三葉が再会した場所でもあります。',
     'images': ['https://image.lgtmoon.dev/270318'],
     'commentCount': 5,
     'visitedCount': 54,
@@ -18,8 +18,8 @@ final spots = [
   },
   {
     'title': '瀧と三葉が再会した階段',
-    'description':
-        'この階段は「君の名は。」のポスター等のキービジュアルとして使用されている場所でもあり、映画の最後のシーンで瀧と三葉が再会した場所でもあります。',
+    'description': 'この階段は「君の名は。」のポスター等のキービジュアルとして'
+        '使用されている場所でもあり、映画の最後のシーンで瀧と三葉が再会した場所でもあります。',
     'images': ['https://image.lgtmoon.dev/270318'],
     'commentCount': 5,
     'visitedCount': 54,
@@ -27,8 +27,8 @@ final spots = [
   },
   {
     'title': '瀧と三葉が再会した階段',
-    'description':
-        'この階段は「君の名は。」のポスター等のキービジュアルとして使用されている場所でもあり、映画の最後のシーンで瀧と三葉が再会した場所でもあります。',
+    'description': 'この階段は「君の名は。」のポスター等のキービジュアルとして'
+        '使用されている場所でもあり、映画の最後のシーンで瀧と三葉が再会した場所でもあります。',
     'images': ['https://image.lgtmoon.dev/270318'],
     'commentCount': 5,
     'visitedCount': 54,
