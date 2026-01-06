@@ -504,7 +504,7 @@ extension MaterialSchemeUtils on MaterialScheme {
       onErrorContainer: onErrorContainer,
       surface: surface,
       onSurface: onSurface,
-      surfaceContainerHighest: surfaceVariant,
+      surfaceVariant: surfaceVariant,
       onSurfaceVariant: onSurfaceVariant,
       outline: outline,
       outlineVariant: outlineVariant,
