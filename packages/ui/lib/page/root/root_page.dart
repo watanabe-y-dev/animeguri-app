@@ -15,7 +15,9 @@ class RootPage extends HookWidget {
 
     return AutoTabsRouter(
       routes: const [
-        HomeRoute(),
+        ExploreRoute(),
+        MapRoute(),
+        SavedRoute(),
         AccountRoute(),
       ],
       builder: (context, child) {
@@ -33,16 +35,25 @@ class RootPage extends HookWidget {
               ],
             ),
             child: BottomNavigationBar(
+              type: BottomNavigationBarType.fixed,
               currentIndex: tabsRouter.activeIndex,
               onTap: tabsRouter.setActiveIndex,
               items: const [
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
-                  label: 'Home',
+                  icon: Icon(Icons.explore),
+                  label: '発見',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.map),
+                  label: 'マップ',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.bookmark),
+                  label: 'しおり',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.account_circle),
-                  label: 'Account',
+                  label: 'アカウント',
                 ),
               ],
             ),
