@@ -1,5 +1,5 @@
-name: presentation
-description: "Presentation layer for animeguri."
+name: ui
+description: "UI layer for animeguri."
 publish_to: 'none'
 
 environment:

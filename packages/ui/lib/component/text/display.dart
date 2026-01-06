@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:presentation/hook/app_theme.dart';
+import 'package:ui/hook/app_theme.dart';
 
-class HeadlineLarge extends HookWidget {
-  const HeadlineLarge(
+class DisplayLarge extends HookWidget {
+  const DisplayLarge(
     this.data, {
     super.key,
     this.color,
@@ -15,17 +15,18 @@ class HeadlineLarge extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final theme = useAppTheme();
+
     return Text(
       data,
-      style: theme.textTheme.headlineLarge?.copyWith(
+      style: theme.textTheme.displayLarge?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );
   }
 }
 
-class HeadlineMedium extends HookWidget {
-  const HeadlineMedium(
+class DisplayMedium extends HookWidget {
+  const DisplayMedium(
     this.data, {
     super.key,
     this.color,
@@ -40,15 +41,15 @@ class HeadlineMedium extends HookWidget {
 
     return Text(
       data,
-      style: theme.textTheme.headlineMedium?.copyWith(
+      style: theme.textTheme.displayMedium?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );
   }
 }
 
-class HeadlineSmall extends HookWidget {
-  const HeadlineSmall(
+class DisplaySmall extends HookWidget {
+  const DisplaySmall(
     this.data, {
     super.key,
     this.color,
@@ -63,7 +64,7 @@ class HeadlineSmall extends HookWidget {
 
     return Text(
       data,
-      style: theme.textTheme.headlineSmall?.copyWith(
+      style: theme.textTheme.displaySmall?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );

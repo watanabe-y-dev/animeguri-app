@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:presentation/hook/app_theme.dart';
+import 'package:ui/hook/app_theme.dart';
 
-class DisplayLarge extends HookWidget {
-  const DisplayLarge(
+class BodyLarge extends HookWidget {
+  const BodyLarge(
     this.data, {
     super.key,
     this.color,
@@ -18,15 +18,15 @@ class DisplayLarge extends HookWidget {
 
     return Text(
       data,
-      style: theme.textTheme.displayLarge?.copyWith(
+      style: theme.textTheme.bodyLarge?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );
   }
 }
 
-class DisplayMedium extends HookWidget {
-  const DisplayMedium(
+class BodyMedium extends HookWidget {
+  const BodyMedium(
     this.data, {
     super.key,
     this.color,
@@ -41,15 +41,15 @@ class DisplayMedium extends HookWidget {
 
     return Text(
       data,
-      style: theme.textTheme.displayMedium?.copyWith(
+      style: theme.textTheme.bodyMedium?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );
   }
 }
 
-class DisplaySmall extends HookWidget {
-  const DisplaySmall(
+class BodySmall extends HookWidget {
+  const BodySmall(
     this.data, {
     super.key,
     this.color,
@@ -64,7 +64,7 @@ class DisplaySmall extends HookWidget {
 
     return Text(
       data,
-      style: theme.textTheme.displaySmall?.copyWith(
+      style: theme.textTheme.bodySmall?.copyWith(
         color: color ?? theme.colorScheme.onSurface,
       ),
     );

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:presentation/router/app_router.dart';
-import 'package:presentation/theme/app_theme.dart';
-import 'package:presentation/theme/app_theme_data.dart';
+import 'package:ui/router/app_router.dart';
+import 'package:ui/theme/app_theme.dart';
+import 'package:ui/theme/app_theme_data.dart';
 
 class App extends HookWidget {
   const App({super.key});

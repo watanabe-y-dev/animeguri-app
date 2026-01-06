@@ -10,7 +10,7 @@ workspace:
   - packages/domain
   - packages/foundation
   - packages/model
-  - packages/presentation
+  - packages/ui
 
 dev_dependencies:
   melos: ^7.3.0

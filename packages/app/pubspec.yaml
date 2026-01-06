@@ -22,8 +22,8 @@ dependencies:
     path: ../foundation
   model:
     path: ../model
-  presentation:
-    path: ../presentation
+  ui:
+    path: ../ui
 
   firebase_core: ^4.3.0
   cupertino_icons: ^1.0.6
