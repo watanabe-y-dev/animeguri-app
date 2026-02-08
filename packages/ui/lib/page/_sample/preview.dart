@@ -14,13 +14,15 @@ Widget previewSamplePage() {
     home: Scaffold(
       body: AppTheme(
         theme: theme,
-        child: const SamplePage(
-          state: SamplePageState(
+        child: SamplePage(
+          state: const SamplePageState(
             samples: [
               Sample(id: '1', name: 'Sample 1', description: 'Sample 1'),
               Sample(id: '2', name: 'Sample 2', description: 'Sample 2'),
             ],
+            effect: SamplePageEffect.none(),
           ),
+          onAction: (action) {},
         ),
       ),
     ),
