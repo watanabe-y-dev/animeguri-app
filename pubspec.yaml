@@ -32,7 +32,7 @@ melos:
 
   scripts:
     get:
-      run: melos exec -c 4 -- "flutter pub get" && melos gen
+      run: melos exec -c 4 -- "flutter pub get"
       description: Runs flutter pub get and melos gen
 
     gen:
