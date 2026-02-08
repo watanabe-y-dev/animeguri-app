@@ -7,5 +7,6 @@ part 'sample_repository.g.dart';
 SampleRepository sampleRepository(Ref ref) => throw UnimplementedError();
 
 abstract interface class SampleRepository {
-  Future<List<Sample>> fetchSamples();
+  Future<List<Sample>> fetchList();
+  Future<void> add({required Sample sample});
 }
