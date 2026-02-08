@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui/hook/app_theme.dart';
 import 'package:ui/page/_sample/sample_page_viewmodel.dart';
 
 class SamplePage extends StatelessWidget {
@@ -10,7 +11,7 @@ class SamplePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    final theme = useAppTheme();
     final colorScheme = theme.colorScheme;
 
     return ListView.builder(

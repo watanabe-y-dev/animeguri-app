@@ -20,4 +20,6 @@ class SamplePageViewModel extends _$SamplePageViewModel {
     final samples = await ref.watch(sampleProvider.future);
     return SamplePageState(samples: samples);
   }
+
+  void tapAddButton() {}
 }
