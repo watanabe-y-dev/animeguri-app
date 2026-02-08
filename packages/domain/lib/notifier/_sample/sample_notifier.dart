@@ -9,6 +9,19 @@ class SampleNotifier extends _$SampleNotifier {
   @override
   Future<List<Sample>> build() async {
     final repository = ref.watch(sampleRepositoryProvider);
-    return repository.fetchSamples();
+    return repository.fetchList();
+  }
+
+  Future<void> add() async {
+    final repository = ref.watch(sampleRepositoryProvider);
+    await update((state) async {
+      final sample = Sample(
+        id: '${state.length + 1}',
+        name: 'Sample ${state.length + 1}',
+        description: 'Description ${state.length + 1}',
+      );
+      await repository.add(sample: sample);
+      return [...state, sample];
+    });
   }
 }
