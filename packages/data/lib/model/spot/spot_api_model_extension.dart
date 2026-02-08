@@ -1,5 +1,5 @@
 import 'package:data/model/spot/spot_api_model.dart';
-import 'package:model/spot.dart';
+import 'package:model/spot/spot.dart';
 
 extension SpotApiModelX on SpotApiModel {
   Spot toModel() => Spot(

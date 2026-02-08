@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'spot.freezed.dart';
+part 'spot.g.dart';
 
 @freezed
 abstract class Spot with _$Spot {
@@ -19,6 +20,8 @@ abstract class Spot with _$Spot {
     required DateTime updatedAt,
     required bool isPublished,
   }) = _Spot;
+
+  factory Spot.fromJson(Map<String, Object?> json) => _$SpotFromJson(json);
 }
 
 @freezed
@@ -27,4 +30,7 @@ abstract class Location with _$Location {
     required double latitude,
     required double longitude,
   }) = _Location;
+
+  factory Location.fromJson(Map<String, Object?> json) =>
+      _$LocationFromJson(json);
 }

@@ -3,7 +3,7 @@ import 'package:data/model/spot/spot_api_model.dart';
 import 'package:data/model/spot/spot_api_model_extension.dart';
 import 'package:domain/repository/spot_repository.dart';
 import 'package:foundation/result.dart';
-import 'package:model/spot.dart';
+import 'package:model/spot/spot.dart';
 
 class SpotRepositoryImpl implements SpotRepository {
   SpotRepositoryImpl({FirebaseFirestore? firestore})

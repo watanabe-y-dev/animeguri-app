@@ -1,6 +1,6 @@
 import 'package:domain/repository/spot_repository.dart';
 import 'package:foundation/result.dart';
-import 'package:model/spot.dart';
+import 'package:model/spot/spot.dart';
 
 class GetSpotsUseCase {
   GetSpotsUseCase(this.repository);
