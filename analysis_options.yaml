@@ -16,6 +16,9 @@ linter:
     one_member_abstracts: false
 
 analyzer:
+  errors:
+    todo: ignore
+    fixme: ignore
   exclude:
     - "**/*.freezed.dart"
     - "**/*.g.dart"
