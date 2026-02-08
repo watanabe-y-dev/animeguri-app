@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:ui/hook/app_theme.dart';
-import 'package:ui/page/_sample/sample_page_viewmodel.dart';
+import 'package:ui/page/_sample/viewmodel.dart';
 
-class SamplePage extends StatelessWidget {
+class SamplePage extends HookWidget {
   const SamplePage({
     super.key,
     required this.state,

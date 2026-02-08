@@ -2,8 +2,8 @@ import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ui/component/async/async_value_builder.dart';
-import 'package:ui/page/_sample/sample_page.dart';
-import 'package:ui/page/_sample/sample_page_viewmodel.dart';
+import 'package:ui/page/_sample/page.dart';
+import 'package:ui/page/_sample/viewmodel.dart';
 
 @RoutePage()
 class SamplePageConsumer extends ConsumerWidget {

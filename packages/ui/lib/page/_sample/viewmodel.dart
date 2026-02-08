@@ -3,8 +3,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:model/_sample/sample.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'sample_page_viewmodel.freezed.dart';
-part 'sample_page_viewmodel.g.dart';
+part 'viewmodel.freezed.dart';
+part 'viewmodel.g.dart';
 
 @freezed
 abstract class SamplePageState with _$SamplePageState {
