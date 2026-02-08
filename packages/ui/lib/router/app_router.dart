@@ -3,7 +3,7 @@ import 'package:ui/export/page.dart';
 
 part 'app_router.gr.dart';
 
-@AutoRouterConfig()
+@AutoRouterConfig(replaceInRouteName: 'PageConsumer|Page,Route')
 class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
@@ -31,6 +31,9 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(
           page: DebugTypographyRoute.page,
+        ),
+        AutoRoute(
+          page: SampleRoute.page,
         ),
       ];
 }

@@ -24,6 +24,11 @@ class DebugHomePage extends HookWidget {
               trailing: const Icon(Icons.chevron_right),
               onTap: () => router()?.push(const DebugTypographyRoute()),
             ),
+            ListTile(
+              title: const Text('Sample Page'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => router()?.push(const SampleRoute()),
+            ),
           ],
         ),
       ),
