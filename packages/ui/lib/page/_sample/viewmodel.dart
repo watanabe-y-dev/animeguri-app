@@ -4,7 +4,6 @@ import 'package:domain/notifier/_sample/sample_notifier.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:model/_sample/sample.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:ui/core/effect.dart';
 
 part 'viewmodel.contract.dart';
 part 'viewmodel.freezed.dart';

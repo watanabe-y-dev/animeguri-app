@@ -14,7 +14,7 @@ sealed class SamplePageAction with _$SamplePageAction {
 }
 
 @freezed
-sealed class SamplePageEffect with _$SamplePageEffect implements UiEffect {
+sealed class SamplePageEffect with _$SamplePageEffect {
   const factory SamplePageEffect.none() = None;
   const factory SamplePageEffect.showSuccessToast({
     required String message,
