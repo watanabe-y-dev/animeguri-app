@@ -17,8 +17,6 @@ dependencies:
     path: ../domain
   foundation:
     path: ../foundation
-  model:
-    path: ../model
 
   auto_route: 11.1.0
   flutter_hooks: ^0.21.0

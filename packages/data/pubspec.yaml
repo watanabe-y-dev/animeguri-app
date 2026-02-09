@@ -13,8 +13,6 @@ dependencies:
     path: ../domain
   foundation:
     path : ../foundation
-  model:
-    path : ../model
   ui:
     path : ../ui
 

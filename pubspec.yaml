@@ -9,7 +9,6 @@ workspace:
   - packages/data
   - packages/domain
   - packages/foundation
-  - packages/model
   - packages/ui
 
 dev_dependencies:
