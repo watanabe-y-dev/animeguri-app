@@ -1,8 +1,8 @@
 import 'dart:async';
 
+import 'package:domain/model/_sample/sample.dart';
 import 'package:domain/notifier/_sample/sample_notifier.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:model/_sample/sample.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'viewmodel.contract.dart';

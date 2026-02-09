@@ -1,6 +1,6 @@
+import 'package:domain/model/_sample/sample.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widget_previews.dart';
-import 'package:model/_sample/sample.dart';
 import 'package:ui/page/_sample/page.dart';
 import 'package:ui/page/_sample/viewmodel.dart';
 import 'package:ui/theme/app_theme.dart';

@@ -1,4 +1,4 @@
-import 'package:model/_sample/sample.dart';
+import 'package:domain/model/_sample/sample.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'sample_repository.g.dart';

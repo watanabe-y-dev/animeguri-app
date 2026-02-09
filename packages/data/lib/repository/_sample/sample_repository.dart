@@ -1,7 +1,7 @@
 import 'package:domain/exception/repository.dart';
+import 'package:domain/model/_sample/sample.dart';
 import 'package:domain/repository/_sample/sample_repository.dart';
 import 'package:foundation/delay.dart';
-import 'package:model/_sample/sample.dart';
 
 class SampleRepositoryImpl implements SampleRepository {
   // サンプルデータ（本来は DB などから取得する）

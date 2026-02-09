@@ -1,5 +1,5 @@
+import 'package:domain/model/_sample/sample.dart';
 import 'package:domain/repository/_sample/sample_repository.dart';
-import 'package:model/_sample/sample.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'sample_notifier.g.dart';
