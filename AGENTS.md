@@ -22,7 +22,7 @@
 
 UI や UI ロジックを実装。
 
-- ui レイヤーから domain レイヤーに直接依存してはいけない
+- ui レイヤーから直接 repository を使用してはいけない
   - `import 'package:domain/repository/...` このようなインポートはルール違反
 
 ## Melos
