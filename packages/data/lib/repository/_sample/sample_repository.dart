@@ -14,7 +14,7 @@ class SampleRepositoryImpl implements SampleRepository {
   Future<List<Sample>> fetchList() async {
     try {
       await delaySeconds(1);
-      return _samples;
+      return List.from(_samples);
     } on Exception catch (e) {
       throw RepositoryException.unknown(e.toString());
     }
