@@ -13,13 +13,14 @@ class SampleNotifier extends _$SampleNotifier {
   }
 
   Future<void> add() async {
-    final repository = ref.watch(sampleRepositoryProvider);
+    final repository = ref.read(sampleRepositoryProvider);
     await update((state) async {
       final sample = Sample(
         id: '${state.length + 1}',
         name: 'Sample ${state.length + 1}',
         description: 'Description ${state.length + 1}',
       );
+
       await repository.add(sample: sample);
       return [...state, sample];
     });
