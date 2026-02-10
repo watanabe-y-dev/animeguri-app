@@ -18,7 +18,7 @@ class SamplePageConsumer extends HookConsumerWidget {
     final notifier = ref.watch(samplePageViewModelProvider.notifier);
 
     ref.listen(
-      samplePageEffectHolderProvider,
+      samplePageEffectEmitterProvider,
       (previous, next) => handleEffect(next),
     );
 
@@ -48,7 +48,7 @@ void Function(SamplePageEffect) _useHandleEffect(WidgetRef ref) {
         showErrorToast: (message) =>
             showSnackbar(message, type: SnackbarType.error),
       );
-      ref.read(samplePageEffectHolderProvider.notifier).reset();
+      ref.read(samplePageEffectEmitterProvider.notifier).reset();
     },
     [],
   );

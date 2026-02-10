@@ -27,7 +27,7 @@ class SamplePageViewModel extends _$SamplePageViewModel {
   }
 
   void _effect(SamplePageEffect effect) {
-    ref.read(samplePageEffectHolderProvider.notifier).onEffect(effect);
+    ref.read(samplePageEffectEmitterProvider.notifier).onEffect(effect);
   }
 
   Future<void> _addSample() async {
@@ -47,7 +47,7 @@ class SamplePageViewModel extends _$SamplePageViewModel {
 }
 
 @riverpod
-class SamplePageEffectHolder extends _$SamplePageEffectHolder {
+class SamplePageEffectEmitter extends _$SamplePageEffectEmitter {
   @override
   SamplePageEffect build() {
     return const SamplePageEffect.none();
