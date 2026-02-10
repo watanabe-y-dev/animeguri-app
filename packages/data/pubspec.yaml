@@ -13,8 +13,6 @@ dependencies:
     path: ../domain
   foundation:
     path : ../foundation
-  ui:
-    path : ../ui
 
   freezed_annotation: ^3.0.6
   json_annotation: ^4.9.0
