@@ -2,9 +2,10 @@ import 'dart:async';
 
 import 'package:domain/model/_sample/sample.dart';
 import 'package:domain/notifier/_sample/sample_notifier.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:ui/core/effect_emitter_base.dart';
+import 'package:ui/core/effect_emitter.dart';
 import 'package:ui/core/viewmodel_base.dart';
 
 part 'viewmodel.contract.dart';
@@ -50,21 +51,7 @@ class SamplePageViewModel extends _$SamplePageViewModel
   }
 }
 
-@riverpod
-class SamplePageEffectEmitter extends _$SamplePageEffectEmitter
-    implements EffectEmitterBase<SamplePageEffect> {
-  @override
-  SamplePageEffect build() {
-    return const SamplePageEffect.none();
-  }
-
-  @override
-  void onEffect(SamplePageEffect effect) {
-    state = effect;
-  }
-
-  @override
-  void reset() {
-    state = const SamplePageEffect.none();
-  }
-}
+final samplePageEffectEmitterProvider =
+    NotifierProvider<EffectEmitter<SamplePageEffect>, SamplePageEffect>(
+  () => EffectEmitter(const SamplePageEffect.none()),
+);
