@@ -261,17 +261,17 @@ melos gen
 
 ### クラス名
 PascalCase で統一：
-- State: `{PageName}State`
-- Event: `{PageName}Event`
-- Effect: `{PageName}Effect`
-- ViewModel: `{PageName}ViewModel`
-- Consumer: `{PageName}Consumer`
-- Page: `{PageName}` (Consumer を除いた名前)
+- State: `{PageName}PageState`
+- Event: `{PageName}PageEvent`
+- Effect: `{PageName}PageEffect`
+- ViewModel: `{PageName}PageViewModel`
+- Consumer: `{PageName}PageConsumer`
+- Page: `{PageName}Page`
 
 ### Provider 名
 camelCase で統一：
-- ViewModel Provider: `{pageName}ViewModelProvider`
-- Effect Provider: `{pageName}EffectEmitterProvider`
+- ViewModel Provider: `{pageName}PageViewModelProvider`
+- Effect Provider: `{pageName}PageEffectEmitterProvider`
 
 ## Architecture Details
 
