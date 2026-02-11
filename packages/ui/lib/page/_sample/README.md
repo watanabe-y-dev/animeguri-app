@@ -118,7 +118,6 @@ class SamplePage extends HookWidget {
 abstract class SamplePageState with _$SamplePageState {
   const factory SamplePageState({
     required List<Sample> samples,
-    required SamplePageEffect effect,
   }) = _SamplePageState;
 }
 
@@ -155,7 +154,7 @@ sealed class SamplePageEffect with _$SamplePageEffect {
 
 - UI ロジック（プレゼンテーションロジック）の実装
 - 状態の管理と更新
-- Action の処理
+- Event の処理
 - Effect の発火
 - domain レイヤーへの橋渡し
 
@@ -163,17 +162,18 @@ sealed class SamplePageEffect with _$SamplePageEffect {
 
 ```dart
 @riverpod
-class SamplePageViewModel extends _$SamplePageViewModel {
+class SamplePageViewModel extends _$SamplePageViewModel
+    implements ViewModelBase<SamplePageEvent, SamplePageEffect> {
   @override
   Future<SamplePageState> build() async {
     // 初期状態の構築
     final samples = await ref.watch(sampleProvider.future);
     return SamplePageState(
       samples: samples,
-      effect: const SamplePageEffect.none(),
     );
   }
 
+  @override
   void onEvent(SamplePageEvent event) {
     // Event のハンドリング
     event.when(
@@ -181,7 +181,8 @@ class SamplePageViewModel extends _$SamplePageViewModel {
     );
   }
 
-  void _effect(SamplePageEffect effect) {
+  @override
+  void effect(SamplePageEffect effect) {
     // Effect の発火
     ref.read(samplePageEffectEmitterProvider.notifier).onEffect(effect);
   }
@@ -189,40 +190,32 @@ class SamplePageViewModel extends _$SamplePageViewModel {
   Future<void> _addSample() async {
     try {
       await ref.read(sampleProvider.notifier).add();
-      _effect(const SamplePageEffect.showSuccessToast(
+      effect(const SamplePageEffect.showSuccessToast(
         message: 'Sample added successfully',
       ));
     } on Exception catch (_) {
-      _effect(const SamplePageEffect.showErrorToast(
+      effect(const SamplePageEffect.showErrorToast(
         message: 'Failed to add sample',
       ));
     }
   }
 }
 
-@riverpod
-class SamplePageEffectEmitter extends _$SamplePageEffectEmitter {
-  @override
-  SamplePageEffect build() {
-    return const SamplePageEffect.none();
-  }
-
-  void onEffect(SamplePageEffect effect) {
-    state = effect;
-  }
-
-  void reset() {
-    state = const SamplePageEffect.none();
-  }
-}
+// 汎用的な EffectEmitter を使用
+final samplePageEffectEmitterProvider =
+    NotifierProvider<EffectEmitter<SamplePageEffect>, SamplePageEffect>(
+  () => EffectEmitter(const SamplePageEffect.none()),
+);
 ```
 
 **重要な実装パターン：**
 
+- `ViewModelBase` インターフェースを実装し、`onEvent()` と `effect()` を実装
 - `AsyncNotifier` を使って非同期処理に対応
 - `build()` メソッドで初期状態を構築
 - `onEvent()` で Event を受け取り、適切な処理を実行
-- Effect は独立した `EffectEmitter` Provider で管理
+- `effect()` メソッドで Effect を発火（`@protected` なので外部から呼べない）
+- Effect は汎用的な `EffectEmitter` クラスと `NotifierProvider` で管理
 - Effect 処理後は必ず `reset()` を呼び出す
 - エラーハンドリングは try-catch で行い、適切な Effect を発火
 
@@ -250,9 +243,8 @@ Widget previewSamplePage() {
               Sample(id: '1', name: 'Sample 1', description: 'Sample 1'),
               Sample(id: '2', name: 'Sample 2', description: 'Sample 2'),
             ],
-            effect: SamplePageEffect.none(),
           ),
-          onEvent: (action) {},
+          onEvent: (event) {},
         ),
       ),
     ),
