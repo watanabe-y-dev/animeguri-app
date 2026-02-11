@@ -4,7 +4,6 @@ part of 'viewmodel.dart';
 abstract class SamplePageState with _$SamplePageState {
   const factory SamplePageState({
     required List<Sample> samples,
-    required SamplePageEffect effect,
   }) = _SamplePageState;
 }
 

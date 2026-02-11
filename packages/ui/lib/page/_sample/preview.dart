@@ -20,7 +20,6 @@ Widget previewSamplePage() {
               Sample(id: '1', name: 'Sample 1', description: 'Sample 1'),
               Sample(id: '2', name: 'Sample 2', description: 'Sample 2'),
             ],
-            effect: SamplePageEffect.none(),
           ),
           onEvent: (event) {},
         ),
