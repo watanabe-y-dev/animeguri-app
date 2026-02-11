@@ -10,7 +10,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 /// ```dart
 /// final samplePageEffectEmitterProvider =
 ///   NotifierProvider<EffectEmitter<SamplePageEffect>, SamplePageEffect>(
-///     EffectEmitter.new,
+///     () => EffectEmitter(const SamplePageEffect.none()),
 ///   );
 /// ```
 ///
