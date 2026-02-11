@@ -10,40 +10,29 @@ class MaterialTheme {
   static MaterialScheme lightScheme() {
     return const MaterialScheme(
       brightness: Brightness.light,
-      // Primary: accent-primary (#3D8A5A)
       primary: Color(0xFF3D8A5A),
       surfaceTint: Color(0xFF3D8A5A),
       onPrimary: Color(0xFFFFFFFF),
-      // Primary Container: accent-light (#C8F0D8)
       primaryContainer: Color(0xFFC8F0D8),
       onPrimaryContainer: Color(0xFF1A1918),
-      // Secondary: text-secondary (#6D6C6A)
       secondary: Color(0xFF6D6C6A),
       onSecondary: Color(0xFFFFFFFF),
-      // Secondary Container: bg-muted (#EDECEA)
       secondaryContainer: Color(0xFFEDECEA),
       onSecondaryContainer: Color(0xFF1A1918),
-      // Tertiary: accent-warm (#D89575)
       tertiary: Color(0xFFD89575),
       onTertiary: Color(0xFFFFFFFF),
-      // Tertiary Container: accent-warm-light (#FFF0E6)
       tertiaryContainer: Color(0xFFFFF0E6),
       onTertiaryContainer: Color(0xFF1A1918),
-      // Error: status-negative (#D08068)
       error: Color(0xFFD08068),
       onError: Color(0xFFFFFFFF),
       errorContainer: Color(0xFFFAE5E0),
       onErrorContainer: Color(0xFF1A1918),
-      // Background: bg-primary (#F5F4F1)
       background: Color(0xFFF5F4F1),
       onBackground: Color(0xFF1A1918),
-      // Surface: bg-surface (#FFFFFF)
       surface: Color(0xFFFFFFFF),
       onSurface: Color(0xFF1A1918),
-      // Surface Variant: bg-muted (#EDECEA)
       surfaceVariant: Color(0xFFEDECEA),
       onSurfaceVariant: Color(0xFF6D6C6A),
-      // Outline: border-strong (#D1D0CD), border-subtle (#E5E4E1)
       outline: Color(0xFFD1D0CD),
       outlineVariant: Color(0xFFE5E4E1),
       shadow: Color(0xFF000000),
@@ -63,7 +52,6 @@ class MaterialTheme {
       onTertiaryFixed: Color(0xFF1A1918),
       tertiaryFixedDim: Color(0xFFD89575),
       onTertiaryFixedVariant: Color(0xFFA86D4E),
-      // Surface Containers
       surfaceDim: Color(0xFFEDECEA),
       surfaceBright: Color(0xFFFFFFFF),
       surfaceContainerLowest: Color(0xFFFFFFFF),
