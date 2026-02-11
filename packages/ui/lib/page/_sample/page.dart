@@ -7,11 +7,11 @@ class SamplePage extends HookWidget {
   const SamplePage({
     super.key,
     required this.state,
-    required this.onAction,
+    required this.onEvent,
   });
 
   final SamplePageState state;
-  final void Function(SamplePageAction) onAction;
+  final void Function(SamplePageEvent) onEvent;
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +108,7 @@ class SamplePage extends HookWidget {
               width: double.infinity,
               child: FilledButton(
                 onPressed: () =>
-                    onAction(const SamplePageAction.tapAddButton()),
+                    onEvent(const SamplePageEvent.addButtonTapped()),
                 style: FilledButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(

@@ -20,9 +20,9 @@ class SamplePageViewModel extends _$SamplePageViewModel {
     );
   }
 
-  void onAction(SamplePageAction action) {
-    action.when(
-      tapAddButton: () => _addSample().ignore(),
+  void onEvent(SamplePageEvent event) {
+    event.when(
+      addButtonTapped: () => _addSample().ignore(),
     );
   }
 

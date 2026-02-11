@@ -22,7 +22,7 @@ Widget previewSamplePage() {
             ],
             effect: SamplePageEffect.none(),
           ),
-          onAction: (action) {},
+          onEvent: (event) {},
         ),
       ),
     ),

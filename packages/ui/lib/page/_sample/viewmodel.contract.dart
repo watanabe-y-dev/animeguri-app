@@ -9,8 +9,9 @@ abstract class SamplePageState with _$SamplePageState {
 }
 
 @freezed
-sealed class SamplePageAction with _$SamplePageAction {
-  const factory SamplePageAction.tapAddButton() = _SamplePageActionTapAddButton;
+sealed class SamplePageEvent with _$SamplePageEvent {
+  const factory SamplePageEvent.addButtonTapped() =
+      _SamplePageEventAddButtonTapped;
 }
 
 @freezed

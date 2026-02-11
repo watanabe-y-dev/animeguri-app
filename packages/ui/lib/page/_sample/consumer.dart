@@ -30,7 +30,7 @@ class SamplePageConsumer extends HookConsumerWidget {
         data: model,
         builder: (data) => SamplePage(
           state: data,
-          onAction: notifier.onAction,
+          onEvent: notifier.onEvent,
         ),
       ),
     );
