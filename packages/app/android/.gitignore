@@ -13,3 +13,4 @@ key.properties
 **/*.jks
 
 **/google-services.json
+build/reports/problems/problems-report.html
