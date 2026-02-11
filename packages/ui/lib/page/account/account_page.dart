@@ -1,6 +1,7 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:ui/hook/app_theme.dart';
 import 'package:ui/hook/router.dart';
 import 'package:ui/router/app_router.dart';
 
@@ -16,28 +17,63 @@ class AccountPage extends HookWidget {
       appBar: AppBar(
         title: const Text('アカウント'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(
-              Icons.account_circle,
-              size: 64,
-            ),
-            const SizedBox(height: 16),
-            const Text(
-              'アカウント画面',
-              style: TextStyle(fontSize: 24),
-            ),
-            const SizedBox(height: 32),
-            ElevatedButton.icon(
-              onPressed: () => router()?.push(const DebugHomeRoute()),
-              icon: const Icon(Icons.bug_report),
-              label: const Text('デバッグ画面'),
-            ),
-          ],
+      body: ListView(
+        children: [
+          const _SectionHeader(title: 'デバッグ'),
+          _MenuItem(
+            icon: Icons.bug_report,
+            title: 'デバッグ画面',
+            onTap: () => router()?.push(const DebugHomeRoute()),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SectionHeader extends HookWidget {
+  const _SectionHeader({
+    required this.title,
+  });
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = useAppTheme();
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+      child: Text(
+        title,
+        style: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
+          color: theme.colorScheme.primary,
         ),
       ),
+    );
+  }
+}
+
+class _MenuItem extends StatelessWidget {
+  const _MenuItem({
+    required this.icon,
+    required this.title,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String title;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(icon),
+      title: Text(title),
+      trailing: const Icon(Icons.chevron_right),
+      onTap: onTap,
     );
   }
 }

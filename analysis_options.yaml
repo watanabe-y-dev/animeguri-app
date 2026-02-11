@@ -14,8 +14,13 @@ linter:
     avoid_catches_without_on_clauses: true
     # 抽象クラスの警告
     one_member_abstracts: false
+    # ignore文のコメント必須化の警告
+    document_ignores: false
 
 analyzer:
+  errors:
+    todo: ignore
+    fixme: ignore
   exclude:
     - "**/*.freezed.dart"
     - "**/*.g.dart"

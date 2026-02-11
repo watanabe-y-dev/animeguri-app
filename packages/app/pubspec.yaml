@@ -20,12 +20,12 @@ dependencies:
     path: ../domain
   foundation:
     path: ../foundation
-  model:
-    path: ../model
   ui:
     path: ../ui
 
   firebase_core: ^4.3.0
+  flutter_riverpod: ^3.0.3
+  riverpod: ^3.0.3
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
