@@ -1,6 +1,7 @@
 ## コーディングルール
 
-実装が完了したら `flutter analyze` を実行して Error と Warning がなくなるまで修正すること。
+ソースコードに変更を加えた場合、IDE の診断情報（diagnostics）を確認すること。
+Error、Warning、Info いずれかが見つかった場合はかならず修正すること。
 
 ## Melos
 
