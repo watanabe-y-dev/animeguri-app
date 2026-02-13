@@ -5,8 +5,8 @@ import 'package:domain/notifier/_sample/sample_notifier.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:ui/core/effect_emitter.dart';
-import 'package:ui/core/viewmodel_base.dart';
+import 'package:ui/core/viewmodel/effect_emitter.dart';
+import 'package:ui/core/viewmodel/viewmodel_base.dart';
 
 part 'viewmodel.contract.dart';
 part 'viewmodel.freezed.dart';
