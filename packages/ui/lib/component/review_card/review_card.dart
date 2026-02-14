@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:lucide_icons/lucide_icons.dart';
+import 'package:ui/hook/app_theme.dart';
 
-class ReviewCard extends StatelessWidget {
+class ReviewCard extends HookWidget {
   const ReviewCard({
     super.key,
     required this.avatarUrl,
@@ -11,6 +13,7 @@ class ReviewCard extends StatelessWidget {
     required this.comment,
     required this.spotName,
     required this.animeName,
+    this.onTap,
   });
 
   final String avatarUrl;
@@ -20,24 +23,24 @@ class ReviewCard extends StatelessWidget {
   final String comment;
   final String spotName;
   final String animeName;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    return Container(
+    final colorScheme = useColorScheme();
+    return SizedBox(
       width: 220,
-      decoration: BoxDecoration(
+      child: Material(
+        type: MaterialType.card,
         color: colorScheme.surfaceContainerLowest,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            offset: const Offset(0, 2),
-            blurRadius: 12,
-            color: colorScheme.shadow.withValues(alpha: 0.03),
-          ),
-        ],
-      ),
-      child: Padding(
+        shadowColor: colorScheme.shadow.withValues(alpha: 0.03),
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(16),
+          splashColor: colorScheme.primary.withValues(alpha: 0.1),
+          highlightColor: colorScheme.primary.withValues(alpha: 0.05),
+          child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,13 +61,15 @@ class ReviewCard extends StatelessWidget {
               animeName: animeName,
             ),
           ],
+            ),
+          ),
         ),
       ),
     );
   }
 }
 
-class _Header extends StatelessWidget {
+class _Header extends HookWidget {
   const _Header({
     required this.avatarUrl,
     required this.userName,
@@ -77,7 +82,7 @@ class _Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
     return Row(
       children: [
         ClipOval(
@@ -131,14 +136,14 @@ class _Header extends StatelessWidget {
   }
 }
 
-class _StarRating extends StatelessWidget {
+class _StarRating extends HookWidget {
   const _StarRating({required this.rating});
 
   final int rating;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: List.generate(5, (index) {
@@ -157,14 +162,14 @@ class _StarRating extends StatelessWidget {
   }
 }
 
-class _Comment extends StatelessWidget {
+class _Comment extends HookWidget {
   const _Comment({required this.comment});
 
   final String comment;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
     return Text(
       comment,
       style: TextStyle(
@@ -180,7 +185,7 @@ class _Comment extends StatelessWidget {
   }
 }
 
-class _SpotInfo extends StatelessWidget {
+class _SpotInfo extends HookWidget {
   const _SpotInfo({
     required this.spotName,
     required this.animeName,
@@ -191,7 +196,7 @@ class _SpotInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
     return Container(
       padding: const EdgeInsets.only(top: 10),
       decoration: BoxDecoration(

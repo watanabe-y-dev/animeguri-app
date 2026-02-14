@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:ui/hook/app_theme.dart';
 
 enum SpotBadgeType {
   newSpot,
@@ -6,32 +8,40 @@ enum SpotBadgeType {
   popular,
 }
 
-class SpotListItem extends StatelessWidget {
+class SpotListItem extends HookWidget {
   const SpotListItem({
     super.key,
     required this.spotName,
     required this.animeName,
     required this.imageUrl,
     this.badge,
+    this.onTap,
   });
 
   final String spotName;
   final String animeName;
   final String imageUrl;
   final SpotBadgeType? badge;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
     return DecoratedBox(
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(color: colorScheme.outlineVariant),
         ),
       ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
-        child: Row(
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          splashColor: colorScheme.primary.withValues(alpha: 0.1),
+          highlightColor: colorScheme.primary.withValues(alpha: 0.05),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
+            child: Row(
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
@@ -93,6 +103,8 @@ class SpotListItem extends StatelessWidget {
               ),
             ),
           ],
+            ),
+          ),
         ),
       ),
     );

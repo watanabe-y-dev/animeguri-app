@@ -22,7 +22,7 @@ class TrendingAnimeSection extends StatelessWidget {
       onActionTap: onSeeAllTap,
       headerPadding: const EdgeInsets.symmetric(horizontal: 24),
       child: SizedBox(
-        height: 180,
+        height: 160,
         child: ListView.separated(
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 24),

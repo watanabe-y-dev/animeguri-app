@@ -14,6 +14,7 @@ class RankingListItem extends HookWidget {
     required this.count,
     required this.unit,
     this.thumbnailUrl,
+    this.onTap,
   });
 
   final int rank;
@@ -22,6 +23,7 @@ class RankingListItem extends HookWidget {
   final int count;
   final String unit;
   final String? thumbnailUrl;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -32,9 +34,15 @@ class RankingListItem extends HookWidget {
           bottom: BorderSide(color: colorScheme.outlineVariant),
         ),
       ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
-        child: Row(
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          splashColor: colorScheme.primary.withValues(alpha: 0.1),
+          highlightColor: colorScheme.primary.withValues(alpha: 0.05),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
+            child: Row(
           children: [
             _RankBadge(rank: rank),
             const Gap(12),
@@ -49,6 +57,8 @@ class RankingListItem extends HookWidget {
             const Gap(12),
             _CountInfo(count: count, unit: unit),
           ],
+            ),
+          ),
         ),
       ),
     );
