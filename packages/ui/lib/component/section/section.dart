@@ -52,8 +52,13 @@ class Section extends HookWidget {
                 ),
               ),
               if (actionLabel != null)
-                GestureDetector(
-                  onTap: onActionTap,
+                TextButton(
+                  onPressed: onActionTap,
+                  style: TextButton.styleFrom(
+                    minimumSize: Size.zero,
+                    padding: EdgeInsets.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
                   child: Text(
                     actionLabel!,
                     style: textTheme.labelMedium?.copyWith(
