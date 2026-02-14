@@ -151,24 +151,14 @@ class _RankingListItem extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = useColorScheme();
-
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        border: Border(
-          bottom: isLast
-              ? BorderSide.none
-              : BorderSide(color: colorScheme.outlineVariant),
-        ),
-      ),
-      child: RankingListItem(
-        rank: item.rank,
-        title: item.spotName,
-        subtitle: item.animeName,
-        count: item.visitCount,
-        unit: '訪問',
-        thumbnailUrl: item.thumbnailUrl,
-      ),
+    return RankingListItem(
+      rank: item.rank,
+      title: item.spotName,
+      subtitle: item.animeName,
+      count: item.visitCount,
+      unit: '訪問',
+      thumbnailUrl: item.thumbnailUrl,
+      isLast: isLast,
     );
   }
 }

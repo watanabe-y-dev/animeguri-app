@@ -13,6 +13,7 @@ class RankingListItem extends HookWidget {
     required this.unit,
     this.thumbnailUrl,
     this.onTap,
+    this.isLast = false,
   });
 
   final int rank;
@@ -22,6 +23,7 @@ class RankingListItem extends HookWidget {
   final String unit;
   final String? thumbnailUrl;
   final VoidCallback? onTap;
+  final bool isLast;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,9 @@ class RankingListItem extends HookWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         border: Border(
-          bottom: BorderSide(color: colorScheme.outlineVariant),
+          bottom: isLast
+              ? BorderSide.none
+              : BorderSide(color: colorScheme.outlineVariant),
         ),
       ),
       child: Material(
