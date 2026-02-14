@@ -195,6 +195,7 @@ extension MaterialSchemeUtils on MaterialScheme {
     return ColorScheme(
       brightness: brightness,
       primary: primary,
+      surfaceTint: surfaceTint,
       onPrimary: onPrimary,
       primaryContainer: primaryContainer,
       onPrimaryContainer: onPrimaryContainer,
@@ -212,6 +213,7 @@ extension MaterialSchemeUtils on MaterialScheme {
       onErrorContainer: onErrorContainer,
       surface: surface,
       onSurface: onSurface,
+      surfaceVariant: surfaceVariant,
       onSurfaceVariant: onSurfaceVariant,
       outline: outline,
       outlineVariant: outlineVariant,
