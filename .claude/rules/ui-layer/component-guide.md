@@ -29,33 +29,42 @@ class MyWidget extends HookWidget {
 }
 ```
 
-## 2. テキストウィジェット
+## 2. テキストスタイル
 
 | ❌ NG | ✅ OK |
 |------|------|
-| `Text('タイトル', style: TextStyle(...))` | `TextTitle.small('タイトル')` |
+| `Theme.of(context).textTheme.titleSmall` | `useTextTheme()` |
 
 **ルール:**
-- 直接 `Text()` を使わない
-- `packages/ui/lib/core/widget/text/` のコンポーネントを使う
+- `Theme.of(context).textTheme` は使わない
+- フック（`useTextTheme()`）を使う
+- フックを使う場合は `HookWidget` を継承
 
-**利用可能なコンポーネント:**
-- `TextDisplay.large()` / `.medium()` / `.small()` - 大きな見出し
-- `TextHeadline.large()` / `.medium()` / `.small()` - 見出し
-- `TextTitle.large()` / `.medium()` / `.small()` - タイトル
-- `TextBody.large()` / `.medium()` / `.small()` - 本文
-- `TextLabel.large()` / `.medium()` / `.small()` - ラベル
-
-**サポートされるプロパティ:**
 ```dart
-TextTitle.small(
-  'テキスト',
-  color: colorScheme.primary,      // オプション
-  maxLines: 2,                     // オプション
-  overflow: TextOverflow.ellipsis, // オプション
-  textAlign: TextAlign.center,     // オプション
-)
+class MyWidget extends HookWidget {
+  @override
+  Widget build(BuildContext context) {
+    final textTheme = useTextTheme();
+    final colorScheme = useColorScheme();
+
+    return Text(
+      'テキスト',
+      style: textTheme.titleSmall?.copyWith(
+        color: colorScheme.onSurface,
+      ),
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
+    );
+  }
+}
 ```
+
+**利用可能なテキストスタイル:**
+- `textTheme.displayLarge` / `.displayMedium` / `.displaySmall` - 大きな見出し
+- `textTheme.headlineLarge` / `.headlineMedium` / `.headlineSmall` - 見出し
+- `textTheme.titleLarge` / `.titleMedium` / `.titleSmall` - タイトル
+- `textTheme.bodyLarge` / `.bodyMedium` / `.bodySmall` - 本文
+- `textTheme.labelLarge` / `.labelMedium` / `.labelSmall` - ラベル
 
 ## 3. カラーの使用
 

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:gap/gap.dart';
-import 'package:ui/core/widget/text/label.dart';
-import 'package:ui/core/widget/text/title.dart';
 import 'package:ui/hook/app_theme.dart';
 
 class RankingListItem extends HookWidget {
@@ -89,6 +87,7 @@ class _RankBadge extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return SizedBox(
       width: 28,
       height: 28,
@@ -98,9 +97,11 @@ class _RankBadge extends HookWidget {
           shape: BoxShape.circle,
         ),
         child: Center(
-          child: TextLabel.medium(
+          child: Text(
             '$rank',
-            color: _textColor(colorScheme),
+            style: textTheme.labelMedium?.copyWith(
+              color: _textColor(colorScheme),
+            ),
           ),
         ),
       ),
@@ -162,18 +163,26 @@ class _ItemInfo extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = useTextTheme();
+    final colorScheme = useColorScheme();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        TextTitle.small(
+        Text(
           title,
+          style: textTheme.titleSmall?.copyWith(
+            color: colorScheme.onSurface,
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
         const Gap(2),
-        TextLabel.small(
+        Text(
           subtitle,
+          style: textTheme.labelSmall?.copyWith(
+            color: colorScheme.onSurface,
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
@@ -193,12 +202,24 @@ class _CountInfo extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = useTextTheme();
+    final colorScheme = useColorScheme();
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        TextTitle.medium('$count'),
+        Text(
+          '$count',
+          style: textTheme.titleMedium?.copyWith(
+            color: colorScheme.onSurface,
+          ),
+        ),
         const Gap(2),
-        TextLabel.small(unit),
+        Text(
+          unit,
+          style: textTheme.labelSmall?.copyWith(
+            color: colorScheme.onSurface,
+          ),
+        ),
       ],
     );
   }
