@@ -14,7 +14,7 @@ dependencies:
 
   result_dart: ^2.1.1
   riverpod: ^3.0.3
-  riverpod_annotation: ^3.0.3
+  riverpod_annotation: 4.0.2
   freezed_annotation: ^3.0.6
   json_annotation: ^4.9.0
 
