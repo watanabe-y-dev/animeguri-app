@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:lucide_icons/lucide_icons.dart';
+import 'package:ui/hook/app_theme.dart';
 
-class NotificationButton extends StatelessWidget {
+class NotificationButton extends HookWidget {
   const NotificationButton({
     super.key,
     this.onPressed,
@@ -11,7 +13,7 @@ class NotificationButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
     return SizedBox(
       width: 44,
       height: 44,
