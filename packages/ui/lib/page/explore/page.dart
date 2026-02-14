@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:ui/component/notification_button/notification_button.dart';
 import 'package:ui/component/search_bar/search_bar.dart';
 import 'package:ui/hook/app_theme.dart';
 import 'package:ui/page/explore/component/anime_list_section/anime_list_section.dart';
@@ -44,29 +45,9 @@ class ExplorePage extends HookWidget {
                       color: colorScheme.onSurface,
                     ),
                   ),
-                  GestureDetector(
-                    onTap: () => onEvent(
+                  NotificationButton(
+                    onPressed: () => onEvent(
                       const ExplorePageEvent.notificationButtonTapped(),
-                    ),
-                    child: Container(
-                      width: 44,
-                      height: 44,
-                      decoration: BoxDecoration(
-                        color: colorScheme.surfaceContainerLowest,
-                        borderRadius: BorderRadius.circular(100),
-                        boxShadow: [
-                          BoxShadow(
-                            color: colorScheme.shadow.withValues(alpha: 0.03),
-                            offset: const Offset(0, 2),
-                            blurRadius: 8,
-                          ),
-                        ],
-                      ),
-                      child: Icon(
-                        Icons.notifications_outlined,
-                        color: colorScheme.onSurface,
-                        size: 20,
-                      ),
                     ),
                   ),
                 ],
