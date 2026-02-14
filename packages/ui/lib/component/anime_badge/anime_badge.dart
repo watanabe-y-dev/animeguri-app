@@ -38,7 +38,7 @@ class AnimeBadge extends HookWidget {
             const SizedBox(width: 6),
             DecoratedBox(
               decoration: BoxDecoration(
-                color: const Color(0xFFC8F0D8),
+                color: colorScheme.primaryContainer,
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Padding(
