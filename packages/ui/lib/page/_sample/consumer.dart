@@ -2,7 +2,7 @@ import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:ui/component/async/async_value_builder.dart';
+import 'package:ui/core/widget/async_value_builder.dart';
 import 'package:ui/hook/snackbar.dart';
 import 'package:ui/page/_sample/page.dart';
 import 'package:ui/page/_sample/viewmodel.dart';

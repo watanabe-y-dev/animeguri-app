@@ -15,6 +15,7 @@ class AppThemeData {
     ).copyWith(
       platform: platform,
       bottomAppBarTheme: colorScheme.bottomAppBarTheme,
+      extensions: [CustomColors.light()],
     );
   }
 

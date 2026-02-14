@@ -12,3 +12,8 @@ ColorScheme useColorScheme() {
   final context = useContext();
   return Theme.of(context).colorScheme;
 }
+
+TextTheme useTextTheme() {
+  final theme = useAppTheme();
+  return theme.textTheme;
+}

@@ -1,0 +1,142 @@
+{
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Edit(packages/**)",
+      "Write(packages/**)",
+      "Bash(flutter analyze:*)",
+
+      "// Core development",
+      "Bash(melos:*)",
+      "Bash(flutter:*)",
+      "Bash(dart:*)",
+      "Bash(make:*)",
+
+      "// Git & CI/CD",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(fastlane:*)",
+
+      "// Scripts & tools",
+      "Bash(./scripts/*.sh)",
+      "Bash(pnpm:*)",
+      "Bash(asdf:*)",
+      "Bash(rg:*)",
+
+      "// Code generation",
+      "Bash(protoc:*)",
+      "Bash(index_generator:*)",
+
+      "// Platform tools",
+      "Bash(pod:*)",
+      "Bash(xcodebuild:*)",
+      "Bash(gradle:*)",
+
+      "// Safe cleanup",
+      "Bash(rm -rf coverage)",
+      "Bash(rm -rf build)",
+      "Bash(rm pubspec_overrides.yaml)"
+    ],
+    "deny": [
+      "// Dangerous rm operations (all combinations)",
+      "Bash(rm -rf /)",
+      "Bash(rm -Rf /)",
+      "Bash(rm -r -f /)",
+      "Bash(rm -fr /)",
+      "Bash(rm -fR /)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -Rf /*)",
+      "Bash(rm -r -f /*)",
+      "Bash(rm -fr /*)",
+      "Bash(rm -fR /*)",
+      "Bash(rm -rf ~)",
+      "Bash(rm -Rf ~)",
+      "Bash(rm -r -f ~)",
+      "Bash(rm -fr ~)",
+      "Bash(rm -fR ~)",
+      "Bash(rm -rf ~/*)",
+      "Bash(rm -Rf ~/*)",
+      "Bash(rm -r -f ~/*)",
+      "Bash(rm -fr ~/*)",
+      "Bash(rm -fR ~/*)",
+      "Bash(rm -rf ..)",
+      "Bash(rm -Rf ..)",
+      "Bash(rm -r -f ..)",
+      "Bash(rm -fr ..)",
+      "Bash(rm -fR ..)",
+
+      "// Git configuration changes",
+      "Bash(git config --global:*)",
+      "Bash(git config --local:*)",
+      "Bash(git config --system:*)",
+      "Bash(git config --worktree:*)",
+      "Bash(git config --file:*)",
+      "Bash(git config user.:*)",
+      "Bash(git config core.:*)",
+      "Bash(git config remote.:*)",
+      "Bash(git config branch.:*)",
+      "Bash(git config --unset:*)",
+      "Bash(git config --remove-section:*)",
+      "Bash(git rebase:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git reset --mixed:*)",
+      "Bash(git reset --soft:*)",
+
+      "// Package installation",
+      "Bash(brew install:*)",
+      "Bash(npm install -g:*)",
+      "Bash(dart pub global activate:*)",
+
+      "// System modifications",
+      "Bash(sudo:*)",
+      "Bash(chmod 777:*)",
+
+      "// GitHub dangerous operations",
+      "Bash(gh repo delete:*)",
+      "Bash(gh repo fork:*)",
+      "Bash(gh auth login:*)",
+
+      "// Direct environment modification",
+      "Bash(export:*)",
+
+      "// SSH operations",
+      "Bash(ssh-keygen:*)",
+      "Bash(ssh-add:*)",
+      "Bash(ssh-copy-id:*)",
+
+      "// Firebase dangerous operations",
+      "Bash(firebase deploy --only hosting:*)",
+      "Bash(firebase functions:delete:*)",
+      "Bash(firebase database:remove:*)",
+
+      "// Docker dangerous operations",
+      "Bash(docker system prune -a:*)",
+      "Bash(docker rmi:*)",
+      "Bash(docker rm:*)",
+
+      "// Certificate operations",
+      "Bash(openssl:*)",
+      "Bash(keytool:*)",
+
+      "// Package uninstall operations",
+      "Bash(brew uninstall:*)",
+
+      "// Dangerous chmod operations",
+      "Bash(chmod -R 777:*)",
+
+      "// User switching",
+      "Bash(su:*)",
+
+      "// Secret file operations",
+      "Read(**/*.secret.*)",
+      "Read(**/secret.*)",
+      "Read(**/.env*)",
+      "Write(**/*.secret.*)",
+      "Write(**/secret.*)",
+      "Write(**/.env*)",
+      "Edit(**/*.secret.*)",
+      "Edit(**/secret.*)",
+      "Edit(**/.env*)"
+    ]
+  }
+}
