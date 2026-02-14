@@ -80,10 +80,10 @@ class AnimeCard extends HookWidget {
                     const Gap(4),
                     Row(
                       children: [
-                        const Icon(
+                        Icon(
                           LucideIcons.mapPin,
                           size: 12,
-                          color: Color(0xFF3D8A5A),
+                          color: colorScheme.primary,
                         ),
                         const Gap(4),
                         Text(
