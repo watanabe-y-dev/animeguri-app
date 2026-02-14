@@ -100,14 +100,14 @@ class _PeriodBadge extends HookWidget {
   }
 }
 
-class _RankingList extends StatelessWidget {
+class _RankingList extends HookWidget {
   const _RankingList({required this.rankings});
 
   final List<RankingItem> rankings;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
 
     return Container(
       decoration: BoxDecoration(
@@ -140,7 +140,7 @@ class _RankingList extends StatelessWidget {
   }
 }
 
-class _RankingListItem extends StatelessWidget {
+class _RankingListItem extends HookWidget {
   const _RankingListItem({
     required this.item,
     required this.isLast,
@@ -151,7 +151,7 @@ class _RankingListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
 
     return DecoratedBox(
       decoration: BoxDecoration(
