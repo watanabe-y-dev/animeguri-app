@@ -202,10 +202,10 @@ class _SpotInfo extends HookWidget {
       ),
       child: Row(
         children: [
-          const Icon(
+          Icon(
             LucideIcons.mapPin,
             size: 12,
-            color: Color(0xFF3D8A5A),
+            color: colorScheme.primary,
           ),
           const SizedBox(width: 4),
           Expanded(
