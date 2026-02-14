@@ -1196,12 +1196,6 @@
               "id": "MogRK",
               "name": "Header",
               "width": "fill_container",
-              "padding": [
-                16,
-                0,
-                0,
-                0
-              ],
               "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
@@ -1211,10 +1205,10 @@
                   "name": "titleText",
                   "fill": "#1A1918",
                   "content": "発見",
+                  "lineHeight": 1.286,
                   "fontFamily": "Outfit",
-                  "fontSize": 26,
-                  "fontWeight": "600",
-                  "letterSpacing": -0.5
+                  "fontSize": 28,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -1288,9 +1282,11 @@
                   "name": "searchText",
                   "fill": "#9C9B99",
                   "content": "作品名で検索...",
+                  "lineHeight": 1.15,
                   "fontFamily": "Outfit",
-                  "fontSize": 15,
-                  "fontWeight": "normal"
+                  "fontSize": 16,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.4
                 }
               ]
             },
@@ -1316,10 +1312,11 @@
                       "name": "popularTitle",
                       "fill": "#1A1918",
                       "content": "話題の作品",
+                      "lineHeight": 1.429,
                       "fontFamily": "Outfit",
                       "fontSize": 18,
                       "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "letterSpacing": 0.1
                     },
                     {
                       "type": "text",
@@ -1327,9 +1324,11 @@
                       "name": "popularMore",
                       "fill": "#3D8A5A",
                       "content": "すべて",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -1394,9 +1393,11 @@
                               "name": "card1title",
                               "fill": "#1A1918",
                               "content": "ゆるキャン△",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 13,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -1421,9 +1422,11 @@
                                   "name": "card1count",
                                   "fill": "#6D6C6A",
                                   "content": "12 聖地",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 11,
-                                  "fontWeight": "500"
+                                  "fontSize": 12,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -1485,9 +1488,11 @@
                               "name": "card1title",
                               "fill": "#1A1918",
                               "content": "花咲くいろは",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 13,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -1512,9 +1517,11 @@
                                   "name": "card1count",
                                   "fill": "#6D6C6A",
                                   "content": "8 聖地",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 11,
-                                  "fontWeight": "500"
+                                  "fontSize": 12,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -1576,9 +1583,11 @@
                               "name": "card1title",
                               "fill": "#1A1918",
                               "content": "氷菓",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 13,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -1603,9 +1612,11 @@
                                   "name": "card1count",
                                   "fill": "#6D6C6A",
                                   "content": "6 聖地",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 11,
-                                  "fontWeight": "500"
+                                  "fontSize": 12,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -1656,10 +1667,11 @@
                           "name": "rankTitleText",
                           "fill": "#1A1918",
                           "content": "巡礼ランキング",
+                          "lineHeight": 1.429,
                           "fontFamily": "Outfit",
                           "fontSize": 18,
                           "fontWeight": "600",
-                          "letterSpacing": -0.2
+                          "letterSpacing": 0.1
                         }
                       ]
                     },
@@ -1680,9 +1692,11 @@
                           "name": "rankPeriodText",
                           "fill": "#6D6C6A",
                           "content": "今週",
+                          "lineHeight": 1.15,
                           "fontFamily": "Outfit",
-                          "fontSize": 11,
-                          "fontWeight": "600"
+                          "fontSize": 12,
+                          "fontWeight": "500",
+                          "letterSpacing": 0.4
                         }
                       ]
                     }
@@ -1786,9 +1800,11 @@
                               "name": "rank1name",
                               "fill": "#1A1918",
                               "content": "須賀神社の階段",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 14,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -1796,9 +1812,11 @@
                               "name": "rank1anime",
                               "fill": "#6D6C6A",
                               "content": "君の名は。",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         },
@@ -1816,10 +1834,11 @@
                               "name": "rank1count",
                               "fill": "#1A1918",
                               "content": "1,847",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "700",
-                              "letterSpacing": -0.5
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -1827,9 +1846,11 @@
                               "name": "rank1label",
                               "fill": "#9C9B99",
                               "content": "訪問",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 10,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -1913,9 +1934,11 @@
                               "name": "rank1name",
                               "fill": "#1A1918",
                               "content": "河口湖大橋",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 14,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -1923,9 +1946,11 @@
                               "name": "rank1anime",
                               "fill": "#6D6C6A",
                               "content": "ゆるキャン△",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         },
@@ -1943,10 +1968,11 @@
                               "name": "rank1count",
                               "fill": "#1A1918",
                               "content": "1,523",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "700",
-                              "letterSpacing": -0.5
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -1954,9 +1980,11 @@
                               "name": "rank1label",
                               "fill": "#9C9B99",
                               "content": "訪問",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 10,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -2038,9 +2066,11 @@
                               "name": "rank1name",
                               "fill": "#1A1918",
                               "content": "湯涌温泉",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 14,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -2048,9 +2078,11 @@
                               "name": "rank1anime",
                               "fill": "#6D6C6A",
                               "content": "花咲くいろは",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         },
@@ -2068,10 +2100,11 @@
                               "name": "rank1count",
                               "fill": "#1A1918",
                               "content": "1,102",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "700",
-                              "letterSpacing": -0.5
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -2079,9 +2112,11 @@
                               "name": "rank1label",
                               "fill": "#9C9B99",
                               "content": "訪問",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 10,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -2113,10 +2148,11 @@
                       "name": "reviewTitle",
                       "fill": "#1A1918",
                       "content": "最近のレビュー",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 18,
-                      "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     },
                     {
                       "type": "text",
@@ -2124,9 +2160,11 @@
                       "name": "reviewMore",
                       "fill": "#3D8A5A",
                       "content": "もっと見る",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -2189,9 +2227,11 @@
                                   "name": "card1nameText",
                                   "fill": "#1A1918",
                                   "content": "sakura_trip",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 13,
-                                  "fontWeight": "600"
+                                  "fontSize": 14,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.5
                                 },
                                 {
                                   "type": "text",
@@ -2199,9 +2239,11 @@
                                   "name": "card1time",
                                   "fill": "#9C9B99",
                                   "content": "2 時間前",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "normal"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -2275,8 +2317,9 @@
                           "content": "アニメで見たあの階段が目の前に！感動して思わず写真を何枚も撮っちゃいました",
                           "lineHeight": 1.5,
                           "fontFamily": "Outfit",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.5
                         },
                         {
                           "type": "frame",
@@ -2315,9 +2358,11 @@
                               "name": "card1spotText",
                               "fill": "#6D6C6A",
                               "content": "須賀神社の階段",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             },
                             {
                               "type": "text",
@@ -2325,9 +2370,11 @@
                               "name": "card1spotDot",
                               "fill": "#9C9B99",
                               "content": "・",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             },
                             {
                               "type": "text",
@@ -2335,9 +2382,11 @@
                               "name": "card1spotAnime",
                               "fill": "#9C9B99",
                               "content": "君の名は。",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -2395,9 +2444,11 @@
                                   "name": "card1nameText",
                                   "fill": "#1A1918",
                                   "content": "seichi_master",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 13,
-                                  "fontWeight": "600"
+                                  "fontSize": 14,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.5
                                 },
                                 {
                                   "type": "text",
@@ -2405,9 +2456,11 @@
                                   "name": "card1time",
                                   "fill": "#9C9B99",
                                   "content": "昨日",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "normal"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -2481,8 +2534,9 @@
                           "content": "温泉街の雰囲気が作中そのまま！地元の人も親切で、聖地巡礼マップまでくれました",
                           "lineHeight": 1.5,
                           "fontFamily": "Outfit",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.5
                         },
                         {
                           "type": "frame",
@@ -2521,9 +2575,11 @@
                               "name": "card1spotText",
                               "fill": "#6D6C6A",
                               "content": "湯涌温泉",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             },
                             {
                               "type": "text",
@@ -2531,9 +2587,11 @@
                               "name": "card1spotDot",
                               "fill": "#9C9B99",
                               "content": "・",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             },
                             {
                               "type": "text",
@@ -2541,9 +2599,11 @@
                               "name": "card1spotAnime",
                               "fill": "#9C9B99",
                               "content": "花咲くいろは",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -2575,10 +2635,11 @@
                       "name": "pilgrimTitle",
                       "fill": "#1A1918",
                       "content": "みんなの巡礼",
+                      "lineHeight": 1.429,
                       "fontFamily": "Outfit",
                       "fontSize": 18,
                       "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "letterSpacing": 0.1
                     },
                     {
                       "type": "text",
@@ -2586,9 +2647,11 @@
                       "name": "pilgrimMore",
                       "fill": "#3D8A5A",
                       "content": "もっと見る",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -2852,10 +2915,11 @@
                       "name": "recTitle",
                       "fill": "#1A1918",
                       "content": "おすすめ聖地",
+                      "lineHeight": 1.429,
                       "fontFamily": "Outfit",
                       "fontSize": 18,
                       "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "letterSpacing": 0.1
                     },
                     {
                       "type": "text",
@@ -2863,9 +2927,11 @@
                       "name": "recMore",
                       "fill": "#3D8A5A",
                       "content": "すべて",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -2943,9 +3009,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "河口湖大橋",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -2960,9 +3028,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "ゆるキャン△",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -2970,9 +3040,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -2991,9 +3063,11 @@
                                       "name": "badgeText1",
                                       "fill": "#3D8A5A",
                                       "content": "新着",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -3057,9 +3131,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "湯涌温泉",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3074,9 +3150,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "花咲くいろは",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -3084,9 +3162,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -3105,9 +3185,11 @@
                                       "name": "badgeText1",
                                       "fill": "#3D8A5A",
                                       "content": "話題",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -3171,9 +3253,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "千反田邸（加茂荘）",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3188,9 +3272,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "氷菓",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -3198,9 +3284,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -3219,9 +3307,11 @@
                                       "name": "badgeText1",
                                       "fill": "#3D8A5A",
                                       "content": "新着",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -3285,9 +3375,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "秩父橋",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3302,9 +3394,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "あの花",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -3312,9 +3406,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -3333,9 +3429,11 @@
                                       "name": "badgeText1",
                                       "fill": "#D89575",
                                       "content": "人気",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -3397,9 +3495,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "竹原町並み保存地区",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3414,9 +3514,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "たまゆら",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -3424,9 +3526,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -3445,9 +3549,11 @@
                                       "name": "badgeText1",
                                       "fill": "#3D8A5A",
                                       "content": "新着",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -3483,10 +3589,11 @@
                       "name": "animeListTitle",
                       "fill": "#1A1918",
                       "content": "作品から探す",
+                      "lineHeight": 1.429,
                       "fontFamily": "Outfit",
                       "fontSize": 18,
                       "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "letterSpacing": 0.1
                     },
                     {
                       "type": "text",
@@ -3494,9 +3601,11 @@
                       "name": "animeListMore",
                       "fill": "#3D8A5A",
                       "content": "すべて",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -3539,9 +3648,11 @@
                               "name": "b1name",
                               "fill": "#1A1918",
                               "content": "ゆるキャン△",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3560,9 +3671,11 @@
                                   "name": "b1countText",
                                   "fill": "#3D8A5A",
                                   "content": "12",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -3592,9 +3705,11 @@
                               "name": "b2name",
                               "fill": "#1A1918",
                               "content": "君の名は。",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3613,9 +3728,11 @@
                                   "name": "b2countText",
                                   "fill": "#3D8A5A",
                                   "content": "8",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -3645,9 +3762,11 @@
                               "name": "b3name",
                               "fill": "#1A1918",
                               "content": "氷菓",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3666,9 +3785,11 @@
                                   "name": "b3countText",
                                   "fill": "#3D8A5A",
                                   "content": "6",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -3707,9 +3828,11 @@
                               "name": "b4name",
                               "fill": "#1A1918",
                               "content": "花咲くいろは",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3728,9 +3851,11 @@
                                   "name": "b4countText",
                                   "fill": "#3D8A5A",
                                   "content": "8",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -3760,9 +3885,11 @@
                               "name": "b5name",
                               "fill": "#1A1918",
                               "content": "あの花",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3781,9 +3908,11 @@
                                   "name": "b5countText",
                                   "fill": "#3D8A5A",
                                   "content": "5",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -3813,9 +3942,11 @@
                               "name": "b6name",
                               "fill": "#1A1918",
                               "content": "けいおん！",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3834,9 +3965,11 @@
                                   "name": "b6countText",
                                   "fill": "#3D8A5A",
                                   "content": "4",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -3875,9 +4008,11 @@
                               "name": "b7name",
                               "fill": "#1A1918",
                               "content": "たまゆら",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3896,9 +4031,11 @@
                                   "name": "b7countText",
                                   "fill": "#3D8A5A",
                                   "content": "3",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -3928,9 +4065,11 @@
                               "name": "b8name",
                               "fill": "#1A1918",
                               "content": "SLAM DUNK",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -3949,9 +4088,11 @@
                                   "name": "b8countText",
                                   "fill": "#3D8A5A",
                                   "content": "7",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -3981,9 +4122,11 @@
                               "name": "b9name",
                               "fill": "#1A1918",
                               "content": "らき☆すた",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -4002,9 +4145,11 @@
                                   "name": "b9countText",
                                   "fill": "#3D8A5A",
                                   "content": "3",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -4046,7 +4191,7 @@
           "width": "fill_container",
           "height": "fill_container",
           "layout": "vertical",
-          "gap": 20,
+          "gap": 32,
           "padding": [
             0,
             24
@@ -4057,12 +4202,6 @@
               "id": "D4VEf",
               "name": "Header",
               "width": "fill_container",
-              "padding": [
-                16,
-                0,
-                0,
-                0
-              ],
               "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
@@ -4072,10 +4211,10 @@
                   "name": "titleText",
                   "fill": "#1A1918",
                   "content": "発見",
+                  "lineHeight": 1.286,
                   "fontFamily": "Outfit",
-                  "fontSize": 26,
-                  "fontWeight": "600",
-                  "letterSpacing": -0.5
+                  "fontSize": 28,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -4149,9 +4288,11 @@
                   "name": "searchText",
                   "fill": "#9C9B99",
                   "content": "作品名で検索...",
+                  "lineHeight": 1.15,
                   "fontFamily": "Outfit",
-                  "fontSize": 15,
-                  "fontWeight": "normal"
+                  "fontSize": 16,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.4
                 }
               ]
             },
@@ -4177,10 +4318,11 @@
                       "name": "popularTitle",
                       "fill": "#1A1918",
                       "content": "話題の作品",
+                      "lineHeight": 1.429,
                       "fontFamily": "Outfit",
                       "fontSize": 18,
                       "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "letterSpacing": 0.1
                     },
                     {
                       "type": "text",
@@ -4188,9 +4330,11 @@
                       "name": "popularMore",
                       "fill": "#3D8A5A",
                       "content": "すべて",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -4255,9 +4399,11 @@
                               "name": "card1title",
                               "fill": "#1A1918",
                               "content": "ゆるキャン△",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 13,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -4282,9 +4428,11 @@
                                   "name": "card1count",
                                   "fill": "#6D6C6A",
                                   "content": "12 聖地",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 11,
-                                  "fontWeight": "500"
+                                  "fontSize": 12,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -4346,9 +4494,11 @@
                               "name": "card1title",
                               "fill": "#1A1918",
                               "content": "花咲くいろは",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 13,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -4373,9 +4523,11 @@
                                   "name": "card1count",
                                   "fill": "#6D6C6A",
                                   "content": "8 聖地",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 11,
-                                  "fontWeight": "500"
+                                  "fontSize": 12,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -4437,9 +4589,11 @@
                               "name": "card1title",
                               "fill": "#1A1918",
                               "content": "氷菓",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 13,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -4464,9 +4618,11 @@
                                   "name": "card1count",
                                   "fill": "#6D6C6A",
                                   "content": "6 聖地",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 11,
-                                  "fontWeight": "500"
+                                  "fontSize": 12,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -4517,10 +4673,11 @@
                           "name": "rankTitleText",
                           "fill": "#1A1918",
                           "content": "巡礼ランキング",
+                          "lineHeight": 1.429,
                           "fontFamily": "Outfit",
                           "fontSize": 18,
                           "fontWeight": "600",
-                          "letterSpacing": -0.2
+                          "letterSpacing": 0.1
                         }
                       ]
                     },
@@ -4541,9 +4698,11 @@
                           "name": "rankPeriodText",
                           "fill": "#6D6C6A",
                           "content": "今週",
+                          "lineHeight": 1.15,
                           "fontFamily": "Outfit",
-                          "fontSize": 11,
-                          "fontWeight": "600"
+                          "fontSize": 12,
+                          "fontWeight": "500",
+                          "letterSpacing": 0.4
                         }
                       ]
                     }
@@ -4647,9 +4806,11 @@
                               "name": "rank1name",
                               "fill": "#1A1918",
                               "content": "須賀神社の階段",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 14,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -4657,9 +4818,11 @@
                               "name": "rank1anime",
                               "fill": "#6D6C6A",
                               "content": "君の名は。",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         },
@@ -4677,10 +4840,11 @@
                               "name": "rank1count",
                               "fill": "#1A1918",
                               "content": "1,847",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "700",
-                              "letterSpacing": -0.5
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -4688,9 +4852,11 @@
                               "name": "rank1label",
                               "fill": "#9C9B99",
                               "content": "訪問",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 10,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -4774,9 +4940,11 @@
                               "name": "rank1name",
                               "fill": "#1A1918",
                               "content": "河口湖大橋",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 14,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -4784,9 +4952,11 @@
                               "name": "rank1anime",
                               "fill": "#6D6C6A",
                               "content": "ゆるキャン△",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         },
@@ -4804,10 +4974,11 @@
                               "name": "rank1count",
                               "fill": "#1A1918",
                               "content": "1,523",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "700",
-                              "letterSpacing": -0.5
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -4815,9 +4986,11 @@
                               "name": "rank1label",
                               "fill": "#9C9B99",
                               "content": "訪問",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 10,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -4899,9 +5072,11 @@
                               "name": "rank1name",
                               "fill": "#1A1918",
                               "content": "湯涌温泉",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 14,
-                              "fontWeight": "600"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -4909,9 +5084,11 @@
                               "name": "rank1anime",
                               "fill": "#6D6C6A",
                               "content": "花咲くいろは",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         },
@@ -4929,10 +5106,11 @@
                               "name": "rank1count",
                               "fill": "#1A1918",
                               "content": "1,102",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "700",
-                              "letterSpacing": -0.5
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "text",
@@ -4940,9 +5118,11 @@
                               "name": "rank1label",
                               "fill": "#9C9B99",
                               "content": "訪問",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 10,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -4974,10 +5154,11 @@
                       "name": "reviewTitle",
                       "fill": "#1A1918",
                       "content": "最近のレビュー",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 18,
-                      "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     },
                     {
                       "type": "text",
@@ -4985,9 +5166,11 @@
                       "name": "reviewMore",
                       "fill": "#3D8A5A",
                       "content": "もっと見る",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -5050,9 +5233,11 @@
                                   "name": "card1nameText",
                                   "fill": "#1A1918",
                                   "content": "sakura_trip",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 13,
-                                  "fontWeight": "600"
+                                  "fontSize": 14,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.5
                                 },
                                 {
                                   "type": "text",
@@ -5060,9 +5245,11 @@
                                   "name": "card1time",
                                   "fill": "#9C9B99",
                                   "content": "2 時間前",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "normal"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -5136,8 +5323,9 @@
                           "content": "アニメで見たあの階段が目の前に！感動して思わず写真を何枚も撮っちゃいました",
                           "lineHeight": 1.5,
                           "fontFamily": "Outfit",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.5
                         },
                         {
                           "type": "frame",
@@ -5176,9 +5364,11 @@
                               "name": "card1spotText",
                               "fill": "#6D6C6A",
                               "content": "須賀神社の階段",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             },
                             {
                               "type": "text",
@@ -5186,9 +5376,11 @@
                               "name": "card1spotDot",
                               "fill": "#9C9B99",
                               "content": "・",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             },
                             {
                               "type": "text",
@@ -5196,9 +5388,11 @@
                               "name": "card1spotAnime",
                               "fill": "#9C9B99",
                               "content": "君の名は。",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -5256,9 +5450,11 @@
                                   "name": "card1nameText",
                                   "fill": "#1A1918",
                                   "content": "seichi_master",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 13,
-                                  "fontWeight": "600"
+                                  "fontSize": 14,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.5
                                 },
                                 {
                                   "type": "text",
@@ -5266,9 +5462,11 @@
                                   "name": "card1time",
                                   "fill": "#9C9B99",
                                   "content": "昨日",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "normal"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -5342,8 +5540,9 @@
                           "content": "温泉街の雰囲気が作中そのまま！地元の人も親切で、聖地巡礼マップまでくれました",
                           "lineHeight": 1.5,
                           "fontFamily": "Outfit",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.5
                         },
                         {
                           "type": "frame",
@@ -5382,9 +5581,11 @@
                               "name": "card1spotText",
                               "fill": "#6D6C6A",
                               "content": "湯涌温泉",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "500"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             },
                             {
                               "type": "text",
@@ -5392,9 +5593,11 @@
                               "name": "card1spotDot",
                               "fill": "#9C9B99",
                               "content": "・",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             },
                             {
                               "type": "text",
@@ -5402,9 +5605,11 @@
                               "name": "card1spotAnime",
                               "fill": "#9C9B99",
                               "content": "花咲くいろは",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 11,
-                              "fontWeight": "normal"
+                              "fontSize": 12,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.4
                             }
                           ]
                         }
@@ -5436,10 +5641,11 @@
                       "name": "pilgrimTitle",
                       "fill": "#1A1918",
                       "content": "みんなの巡礼",
+                      "lineHeight": 1.429,
                       "fontFamily": "Outfit",
                       "fontSize": 18,
                       "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "letterSpacing": 0.1
                     },
                     {
                       "type": "text",
@@ -5447,9 +5653,11 @@
                       "name": "pilgrimMore",
                       "fill": "#3D8A5A",
                       "content": "もっと見る",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -5713,10 +5921,11 @@
                       "name": "recTitle",
                       "fill": "#1A1918",
                       "content": "おすすめ聖地",
+                      "lineHeight": 1.429,
                       "fontFamily": "Outfit",
                       "fontSize": 18,
                       "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "letterSpacing": 0.1
                     },
                     {
                       "type": "text",
@@ -5724,9 +5933,11 @@
                       "name": "recMore",
                       "fill": "#3D8A5A",
                       "content": "すべて",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -5804,9 +6015,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "河口湖大橋",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -5821,9 +6034,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "ゆるキャン△",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -5831,9 +6046,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -5852,9 +6069,11 @@
                                       "name": "badgeText1",
                                       "fill": "#3D8A5A",
                                       "content": "新着",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -5918,9 +6137,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "湯涌温泉",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -5935,9 +6156,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "花咲くいろは",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -5945,9 +6168,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -5966,9 +6191,11 @@
                                       "name": "badgeText1",
                                       "fill": "#3D8A5A",
                                       "content": "話題",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -6032,9 +6259,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "千反田邸（加茂荘）",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6049,9 +6278,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "氷菓",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -6059,9 +6290,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -6080,9 +6313,11 @@
                                       "name": "badgeText1",
                                       "fill": "#3D8A5A",
                                       "content": "新着",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -6146,9 +6381,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "秩父橋",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6163,9 +6400,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "あの花",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -6173,9 +6412,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -6194,9 +6435,11 @@
                                       "name": "badgeText1",
                                       "fill": "#D89575",
                                       "content": "人気",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -6258,9 +6501,11 @@
                               "name": "spotName1",
                               "fill": "#1A1918",
                               "content": "竹原町並み保存地区",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "fontSize": 16,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6275,9 +6520,11 @@
                                   "name": "spotAnime1",
                                   "fill": "#6D6C6A",
                                   "content": "たまゆら",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "text",
@@ -6285,9 +6532,11 @@
                                   "name": "spotDot1",
                                   "fill": "#9C9B99",
                                   "content": "・",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
                                   "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 },
                                 {
                                   "type": "frame",
@@ -6306,9 +6555,11 @@
                                       "name": "badgeText1",
                                       "fill": "#3D8A5A",
                                       "content": "新着",
+                                      "lineHeight": 1.15,
                                       "fontFamily": "Outfit",
-                                      "fontSize": 11,
-                                      "fontWeight": "600"
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.4
                                     }
                                   ]
                                 }
@@ -6344,10 +6595,11 @@
                       "name": "animeListTitle",
                       "fill": "#1A1918",
                       "content": "作品から探す",
+                      "lineHeight": 1.429,
                       "fontFamily": "Outfit",
                       "fontSize": 18,
                       "fontWeight": "600",
-                      "letterSpacing": -0.2
+                      "letterSpacing": 0.1
                     },
                     {
                       "type": "text",
@@ -6355,9 +6607,11 @@
                       "name": "animeListMore",
                       "fill": "#3D8A5A",
                       "content": "すべて",
+                      "lineHeight": 1.15,
                       "fontFamily": "Outfit",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
                     }
                   ]
                 },
@@ -6400,9 +6654,11 @@
                               "name": "b1name",
                               "fill": "#1A1918",
                               "content": "ゆるキャン△",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6421,9 +6677,11 @@
                                   "name": "b1countText",
                                   "fill": "#3D8A5A",
                                   "content": "12",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -6453,9 +6711,11 @@
                               "name": "b2name",
                               "fill": "#1A1918",
                               "content": "君の名は。",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6474,9 +6734,11 @@
                                   "name": "b2countText",
                                   "fill": "#3D8A5A",
                                   "content": "8",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -6506,9 +6768,11 @@
                               "name": "b3name",
                               "fill": "#1A1918",
                               "content": "氷菓",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6527,9 +6791,11 @@
                                   "name": "b3countText",
                                   "fill": "#3D8A5A",
                                   "content": "6",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -6568,9 +6834,11 @@
                               "name": "b4name",
                               "fill": "#1A1918",
                               "content": "花咲くいろは",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6589,9 +6857,11 @@
                                   "name": "b4countText",
                                   "fill": "#3D8A5A",
                                   "content": "8",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -6621,9 +6891,11 @@
                               "name": "b5name",
                               "fill": "#1A1918",
                               "content": "あの花",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6642,9 +6914,11 @@
                                   "name": "b5countText",
                                   "fill": "#3D8A5A",
                                   "content": "5",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -6674,9 +6948,11 @@
                               "name": "b6name",
                               "fill": "#1A1918",
                               "content": "けいおん！",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6695,9 +6971,11 @@
                                   "name": "b6countText",
                                   "fill": "#3D8A5A",
                                   "content": "4",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -6736,9 +7014,11 @@
                               "name": "b7name",
                               "fill": "#1A1918",
                               "content": "たまゆら",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6757,9 +7037,11 @@
                                   "name": "b7countText",
                                   "fill": "#3D8A5A",
                                   "content": "3",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -6789,9 +7071,11 @@
                               "name": "b8name",
                               "fill": "#1A1918",
                               "content": "SLAM DUNK",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6810,9 +7094,11 @@
                                   "name": "b8countText",
                                   "fill": "#3D8A5A",
                                   "content": "7",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -6842,9 +7128,11 @@
                               "name": "b9name",
                               "fill": "#1A1918",
                               "content": "らき☆すた",
+                              "lineHeight": 1.15,
                               "fontFamily": "Outfit",
-                              "fontSize": 12,
-                              "fontWeight": "500"
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
                             },
                             {
                               "type": "frame",
@@ -6863,9 +7151,11 @@
                                   "name": "b9countText",
                                   "fill": "#3D8A5A",
                                   "content": "3",
+                                  "lineHeight": 1.15,
                                   "fontFamily": "Outfit",
-                                  "fontSize": 10,
-                                  "fontWeight": "600"
+                                  "fontSize": 11,
+                                  "fontWeight": "500",
+                                  "letterSpacing": 0.4
                                 }
                               ]
                             }
@@ -9523,136 +9813,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "rectangle",
-          "id": "B5DO9",
-          "name": "d9",
-          "fill": "#E5E4E1",
-          "width": "fill_container",
-          "height": 1
-        },
-        {
-          "type": "frame",
-          "id": "2rRDe",
-          "name": "Typography",
-          "width": "fill_container",
-          "layout": "vertical",
-          "gap": 16,
-          "children": [
-            {
-              "type": "text",
-              "id": "lmjyS",
-              "name": "fontLabel",
-              "fill": "#1A1918",
-              "content": "Typography",
-              "fontFamily": "Outfit",
-              "fontSize": 18,
-              "fontWeight": "600"
-            },
-            {
-              "type": "frame",
-              "id": "lYxJr",
-              "name": "fontBox",
-              "width": "fill_container",
-              "fill": "#F5F4F1",
-              "cornerRadius": 12,
-              "layout": "vertical",
-              "gap": 12,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "8FCGA",
-                  "name": "fontName",
-                  "fill": "#1A1918",
-                  "content": "fontPrimary: Outfit",
-                  "fontFamily": "Outfit",
-                  "fontSize": 14,
-                  "fontWeight": "600"
-                },
-                {
-                  "type": "text",
-                  "id": "YjVbJ",
-                  "name": "fontSample",
-                  "fill": "#1A1918",
-                  "content": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-                  "fontFamily": "Outfit",
-                  "fontSize": 20,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "JgTcu",
-                  "name": "fontSample2",
-                  "fill": "#1A1918",
-                  "content": "abcdefghijklmnopqrstuvwxyz",
-                  "fontFamily": "Outfit",
-                  "fontSize": 20,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "cF4z7",
-                  "name": "fontSample3",
-                  "fill": "#1A1918",
-                  "content": "0123456789",
-                  "fontFamily": "Outfit",
-                  "fontSize": 20,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "frame",
-                  "id": "GWG4E",
-                  "name": "fontWeights",
-                  "width": "fill_container",
-                  "gap": 24,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "iVcE1",
-                      "name": "fw1",
-                      "fill": "#6D6C6A",
-                      "content": "Regular",
-                      "fontFamily": "Outfit",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "0T56R",
-                      "name": "fw2",
-                      "fill": "#6D6C6A",
-                      "content": "Medium",
-                      "fontFamily": "Outfit",
-                      "fontSize": 16,
-                      "fontWeight": "500"
-                    },
-                    {
-                      "type": "text",
-                      "id": "ib78J",
-                      "name": "fw3",
-                      "fill": "#1A1918",
-                      "content": "SemiBold",
-                      "fontFamily": "Outfit",
-                      "fontSize": 16,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "8KOU4",
-                      "name": "fw4",
-                      "fill": "#1A1918",
-                      "content": "Bold",
-                      "fontFamily": "Outfit",
-                      "fontSize": 16,
-                      "fontWeight": "700"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -9729,11 +9889,10 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextDisplay.large()",
-                  "lineHeight": "$displayLarge/lineHeight",
+                  "lineHeight": 1.123,
                   "fontFamily": "Outfit",
-                  "fontSize": "$displayLarge/fontSize",
-                  "fontWeight": "$displayLarge/fontWeight",
-                  "letterSpacing": "$displayLarge/letterSpacing"
+                  "fontSize": 57,
+                  "letterSpacing": -0.25
                 },
                 {
                   "type": "text",
@@ -9761,11 +9920,9 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextDisplay.medium()",
-                  "lineHeight": "$displayMedium/lineHeight",
+                  "lineHeight": 1.156,
                   "fontFamily": "Outfit",
-                  "fontSize": "$displayMedium/fontSize",
-                  "fontWeight": "$displayMedium/fontWeight",
-                  "letterSpacing": "$displayMedium/letterSpacing"
+                  "fontSize": 45
                 },
                 {
                   "type": "text",
@@ -9793,11 +9950,9 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextDisplay.small()",
-                  "lineHeight": "$displaySmall/lineHeight",
+                  "lineHeight": 1.222,
                   "fontFamily": "Outfit",
-                  "fontSize": "$displaySmall/fontSize",
-                  "fontWeight": "$displaySmall/fontWeight",
-                  "letterSpacing": "$displaySmall/letterSpacing"
+                  "fontSize": 36
                 },
                 {
                   "type": "text",
@@ -9853,11 +10008,9 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextHeadline.large()",
-                  "lineHeight": "$headlineLarge/lineHeight",
+                  "lineHeight": 1.25,
                   "fontFamily": "Outfit",
-                  "fontSize": "$headlineLarge/fontSize",
-                  "fontWeight": "$headlineLarge/fontWeight",
-                  "letterSpacing": "$headlineLarge/letterSpacing"
+                  "fontSize": 32
                 },
                 {
                   "type": "text",
@@ -9885,11 +10038,9 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextHeadline.medium()",
-                  "lineHeight": "$headlineMedium/lineHeight",
+                  "lineHeight": 1.286,
                   "fontFamily": "Outfit",
-                  "fontSize": "$headlineMedium/fontSize",
-                  "fontWeight": "$headlineMedium/fontWeight",
-                  "letterSpacing": "$headlineMedium/letterSpacing"
+                  "fontSize": 28
                 },
                 {
                   "type": "text",
@@ -9917,11 +10068,9 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextHeadline.small()",
-                  "lineHeight": "$headlineSmall/lineHeight",
+                  "lineHeight": 1.333,
                   "fontFamily": "Outfit",
-                  "fontSize": "$headlineSmall/fontSize",
-                  "fontWeight": "$headlineSmall/fontWeight",
-                  "letterSpacing": "$headlineSmall/letterSpacing"
+                  "fontSize": 24
                 },
                 {
                   "type": "text",
@@ -9977,11 +10126,10 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextTitle.large()",
-                  "lineHeight": "$titleLarge/lineHeight",
+                  "lineHeight": 1.273,
                   "fontFamily": "Outfit",
-                  "fontSize": "$titleLarge/fontSize",
-                  "fontWeight": "$titleLarge/fontWeight",
-                  "letterSpacing": "$titleLarge/letterSpacing"
+                  "fontSize": 22,
+                  "fontWeight": "600"
                 },
                 {
                   "type": "text",
@@ -10009,11 +10157,11 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextTitle.medium()",
-                  "lineHeight": "$titleMedium/lineHeight",
+                  "lineHeight": 1.5,
                   "fontFamily": "Outfit",
-                  "fontSize": "$titleMedium/fontSize",
-                  "fontWeight": "$titleMedium/fontWeight",
-                  "letterSpacing": "$titleMedium/letterSpacing"
+                  "fontSize": 20,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.15
                 },
                 {
                   "type": "text",
@@ -10041,11 +10189,11 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextTitle.small()",
-                  "lineHeight": "$titleSmall/lineHeight",
+                  "lineHeight": 1.429,
                   "fontFamily": "Outfit",
-                  "fontSize": "$titleSmall/fontSize",
-                  "fontWeight": "$titleSmall/fontWeight",
-                  "letterSpacing": "$titleSmall/letterSpacing"
+                  "fontSize": 18,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.1
                 },
                 {
                   "type": "text",
@@ -10101,11 +10249,10 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextBody.large()",
-                  "lineHeight": "$bodyLarge/lineHeight",
+                  "lineHeight": 1.15,
                   "fontFamily": "Outfit",
-                  "fontSize": "$bodyLarge/fontSize",
-                  "fontWeight": "$bodyLarge/fontWeight",
-                  "letterSpacing": "$bodyLarge/letterSpacing"
+                  "fontSize": 20,
+                  "letterSpacing": 0.5
                 },
                 {
                   "type": "text",
@@ -10133,11 +10280,10 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextBody.medium()",
-                  "lineHeight": "$bodyMedium/lineHeight",
+                  "lineHeight": 1.15,
                   "fontFamily": "Outfit",
-                  "fontSize": "$bodyMedium/fontSize",
-                  "fontWeight": "$bodyMedium/fontWeight",
-                  "letterSpacing": "$bodyMedium/letterSpacing"
+                  "fontSize": 18,
+                  "letterSpacing": 0.25
                 },
                 {
                   "type": "text",
@@ -10165,11 +10311,10 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextBody.small()",
-                  "lineHeight": "$bodySmall/lineHeight",
+                  "lineHeight": 1.15,
                   "fontFamily": "Outfit",
-                  "fontSize": "$bodySmall/fontSize",
-                  "fontWeight": "$bodySmall/fontWeight",
-                  "letterSpacing": "$bodySmall/letterSpacing"
+                  "fontSize": 16,
+                  "letterSpacing": 0.4
                 },
                 {
                   "type": "text",
@@ -10225,11 +10370,11 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextLabel.large()",
-                  "lineHeight": "$labelLarge/lineHeight",
+                  "lineHeight": 1.15,
                   "fontFamily": "Outfit",
-                  "fontSize": "$labelLarge/fontSize",
-                  "fontWeight": "$labelLarge/fontWeight",
-                  "letterSpacing": "$labelLarge/letterSpacing"
+                  "fontSize": 18,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.1
                 },
                 {
                   "type": "text",
@@ -10257,11 +10402,11 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextLabel.medium()",
-                  "lineHeight": "$labelMedium/lineHeight",
+                  "lineHeight": 1.15,
                   "fontFamily": "Outfit",
-                  "fontSize": "$labelMedium/fontSize",
-                  "fontWeight": "$labelMedium/fontWeight",
-                  "letterSpacing": "$labelMedium/letterSpacing"
+                  "fontSize": 16,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.5
                 },
                 {
                   "type": "text",
@@ -10289,11 +10434,11 @@
                   "name": "sample",
                   "fill": "#1A1918",
                   "content": "TextLabel.small()",
-                  "lineHeight": "$labelSmall/lineHeight",
+                  "lineHeight": 1.15,
                   "fontFamily": "Outfit",
-                  "fontSize": "$labelSmall/fontSize",
-                  "fontWeight": "$labelSmall/fontWeight",
-                  "letterSpacing": "$labelSmall/letterSpacing"
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.5
                 },
                 {
                   "type": "text",
@@ -10301,6 +10446,98 @@
                   "name": "meta",
                   "fill": "#9C9B99",
                   "content": "labelSmall — 14px / w500 / spacing: 0.5 / line: 1.15",
+                  "fontFamily": "Outfit",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "JhbTB",
+          "name": "div5",
+          "fill": "#E5E4E1",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "WHvfs",
+          "name": "Caption Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "PV9D4",
+              "name": "sectionLabel",
+              "fill": "#1A1918",
+              "content": "Caption",
+              "fontFamily": "Outfit",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "ClEYb",
+              "name": "captionLarge",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SYy1f",
+                  "name": "sample",
+                  "fill": "#1A1918",
+                  "content": "TextCaption.large()",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Outfit",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.4
+                },
+                {
+                  "type": "text",
+                  "id": "McmxS",
+                  "name": "meta",
+                  "fill": "#9C9B99",
+                  "content": "captionLarge — 12px / w500 / spacing: 0.4 / line: 1.15",
+                  "fontFamily": "Outfit",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "MdL6T",
+              "name": "captionSmall",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VDht0",
+                  "name": "sample",
+                  "fill": "#1A1918",
+                  "content": "TextCaption.small()",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Outfit",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.4
+                },
+                {
+                  "type": "text",
+                  "id": "TTLct",
+                  "name": "meta",
+                  "fill": "#9C9B99",
+                  "content": "captionSmall — 11px / w500 / spacing: 0.4 / line: 1.15",
                   "fontFamily": "Outfit",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -10772,6 +11009,38 @@
       "value": 0.5
     },
     "labelSmall/lineHeight": {
+      "type": "number",
+      "value": 1.15
+    },
+    "captionLarge/fontSize": {
+      "type": "number",
+      "value": 12
+    },
+    "captionLarge/fontWeight": {
+      "type": "string",
+      "value": "500"
+    },
+    "captionLarge/letterSpacing": {
+      "type": "number",
+      "value": 0.4
+    },
+    "captionLarge/lineHeight": {
+      "type": "number",
+      "value": 1.15
+    },
+    "captionSmall/fontSize": {
+      "type": "number",
+      "value": 11
+    },
+    "captionSmall/fontWeight": {
+      "type": "string",
+      "value": "500"
+    },
+    "captionSmall/letterSpacing": {
+      "type": "number",
+      "value": 0.4
+    },
+    "captionSmall/lineHeight": {
       "type": "number",
       "value": 1.15
     }

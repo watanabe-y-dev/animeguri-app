@@ -83,6 +83,7 @@ class _Header extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return Row(
       children: [
         ClipOval(
@@ -110,10 +111,8 @@ class _Header extends HookWidget {
             children: [
               Text(
                 userName,
-                style: TextStyle(
-                  fontFamily: 'Outfit',
+                style: textTheme.labelLarge?.copyWith(
                   fontSize: 13,
-                  fontWeight: FontWeight.w600,
                   color: colorScheme.onSurface,
                 ),
                 maxLines: 1,
@@ -121,10 +120,8 @@ class _Header extends HookWidget {
               ),
               Text(
                 timeAgo,
-                style: TextStyle(
-                  fontFamily: 'Outfit',
+                style: textTheme.labelSmall?.copyWith(
                   fontSize: 10,
-                  fontWeight: FontWeight.normal,
                   color: colorScheme.onSurfaceVariant,
                 ),
               ),
@@ -170,12 +167,10 @@ class _Comment extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return Text(
       comment,
-      style: TextStyle(
-        fontFamily: 'Outfit',
-        fontSize: 12,
-        fontWeight: FontWeight.normal,
+      style: textTheme.bodySmall?.copyWith(
         color: colorScheme.onSurfaceVariant,
         height: 1.5,
       ),
@@ -197,6 +192,7 @@ class _SpotInfo extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return Container(
       padding: const EdgeInsets.only(top: 10),
       decoration: BoxDecoration(
@@ -215,10 +211,8 @@ class _SpotInfo extends HookWidget {
           Expanded(
             child: Text(
               '$spotName・$animeName',
-              style: TextStyle(
-                fontFamily: 'Outfit',
+              style: textTheme.labelSmall?.copyWith(
                 fontSize: 11,
-                fontWeight: FontWeight.normal,
                 color: colorScheme.onSurfaceVariant,
               ),
               maxLines: 1,

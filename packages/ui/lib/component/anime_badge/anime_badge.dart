@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:ui/hook/app_theme.dart';
 
-class AnimeBadge extends StatelessWidget {
+class AnimeBadge extends HookWidget {
   const AnimeBadge({
     super.key,
     required this.name,
@@ -12,7 +14,8 @@ class AnimeBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return DecoratedBox(
       decoration: BoxDecoration(
         color: colorScheme.surfaceContainerLowest,
@@ -28,10 +31,7 @@ class AnimeBadge extends StatelessWidget {
           children: [
             Text(
               name,
-              style: TextStyle(
-                fontFamily: 'Outfit',
-                fontSize: 12,
-                fontWeight: FontWeight.w500,
+              style: textTheme.labelSmall?.copyWith(
                 color: colorScheme.onSurface,
               ),
             ),
@@ -48,10 +48,7 @@ class AnimeBadge extends StatelessWidget {
                 ),
                 child: Text(
                   '$count',
-                  style: TextStyle(
-                    fontFamily: 'Outfit',
-                    fontSize: 12,
-                    fontWeight: FontWeight.w500,
+                  style: textTheme.labelSmall?.copyWith(
                     color: colorScheme.onSurface,
                   ),
                 ),

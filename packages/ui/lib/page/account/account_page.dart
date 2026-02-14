@@ -40,16 +40,15 @@ class _SectionHeader extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = useAppTheme();
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
       child: Text(
         title,
-        style: TextStyle(
-          fontSize: 14,
-          fontWeight: FontWeight.bold,
-          color: theme.colorScheme.primary,
+        style: textTheme.labelLarge?.copyWith(
+          color: colorScheme.primary,
         ),
       ),
     );

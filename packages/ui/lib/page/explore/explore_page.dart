@@ -1,6 +1,7 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:ui/hook/app_theme.dart';
 
 @RoutePage()
 class ExplorePage extends HookWidget {
@@ -8,27 +9,34 @@ class ExplorePage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = useTextTheme();
+    final colorScheme = useColorScheme();
     return Scaffold(
       appBar: AppBar(
         title: const Text('発見'),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
               Icons.explore,
               size: 64,
+              color: colorScheme.onSurface,
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Text(
               '発見画面',
-              style: TextStyle(fontSize: 24),
+              style: textTheme.headlineSmall?.copyWith(
+                color: colorScheme.onSurface,
+              ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               '新しい聖地を探します',
-              style: TextStyle(fontSize: 16),
+              style: textTheme.bodyLarge?.copyWith(
+                color: colorScheme.onSurface,
+              ),
             ),
           ],
         ),

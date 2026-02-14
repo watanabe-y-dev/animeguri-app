@@ -21,6 +21,7 @@ class AnimeCard extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return SizedBox(
       width: 140,
       child: Material(
@@ -69,10 +70,8 @@ class AnimeCard extends HookWidget {
                   children: [
                     Text(
                       title,
-                      style: TextStyle(
-                        fontFamily: 'Outfit',
+                      style: textTheme.labelLarge?.copyWith(
                         fontSize: 13,
-                        fontWeight: FontWeight.w600,
                         color: colorScheme.onSurface,
                       ),
                       maxLines: 2,
@@ -89,10 +88,8 @@ class AnimeCard extends HookWidget {
                         const Gap(4),
                         Text(
                           '$pilgrimageCount 聖地',
-                          style: TextStyle(
-                            fontFamily: 'Outfit',
+                          style: textTheme.labelSmall?.copyWith(
                             fontSize: 11,
-                            fontWeight: FontWeight.w500,
                             color: colorScheme.onSurfaceVariant,
                           ),
                         ),

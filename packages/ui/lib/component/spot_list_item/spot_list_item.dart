@@ -27,6 +27,7 @@ class SpotListItem extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return DecoratedBox(
       decoration: BoxDecoration(
         border: Border(
@@ -68,10 +69,7 @@ class SpotListItem extends HookWidget {
                 children: [
                   Text(
                     spotName,
-                    style: TextStyle(
-                      fontFamily: 'Outfit',
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
+                    style: textTheme.labelLarge?.copyWith(
                       color: colorScheme.onSurface,
                     ),
                     maxLines: 1,
@@ -83,10 +81,7 @@ class SpotListItem extends HookWidget {
                       Flexible(
                         child: Text(
                           animeName,
-                          style: TextStyle(
-                            fontFamily: 'Outfit',
-                            fontSize: 12,
-                            fontWeight: FontWeight.normal,
+                          style: textTheme.bodySmall?.copyWith(
                             color: colorScheme.onSurfaceVariant,
                           ),
                           maxLines: 1,
@@ -111,13 +106,14 @@ class SpotListItem extends HookWidget {
   }
 }
 
-class _SpotBadge extends StatelessWidget {
+class _SpotBadge extends HookWidget {
   const _SpotBadge({required this.type});
 
   final SpotBadgeType type;
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = useTextTheme();
     final (label, textColor, bgColor) = switch (type) {
       SpotBadgeType.newSpot => (
         '新着',
@@ -144,10 +140,8 @@ class _SpotBadge extends StatelessWidget {
       ),
       child: Text(
         label,
-        style: TextStyle(
-          fontFamily: 'Outfit',
+        style: textTheme.labelSmall?.copyWith(
           fontSize: 11,
-          fontWeight: FontWeight.w500,
           color: textColor,
         ),
       ),

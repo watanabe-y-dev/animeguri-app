@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:ui/hook/app_theme.dart';
 
 /// セクションウィジェット
 ///
 /// タイトルとアクションリンク、コンテンツエリアを持つ汎用コンポーネント
-class Section extends StatelessWidget {
+class Section extends HookWidget {
   const Section({
     required this.title,
     required this.child,
@@ -30,8 +32,8 @@ class Section extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,10 +46,7 @@ class Section extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextStyle(
-                  fontFamily: 'Outfit',
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
+                style: textTheme.titleMedium?.copyWith(
                   letterSpacing: -0.2,
                   color: colorScheme.onSurface,
                 ),
@@ -57,10 +56,7 @@ class Section extends StatelessWidget {
                   onTap: onActionTap,
                   child: Text(
                     actionLabel!,
-                    style: TextStyle(
-                      fontFamily: 'Outfit',
-                      fontSize: 13,
-                      fontWeight: FontWeight.w500,
+                    style: textTheme.labelMedium?.copyWith(
                       color: colorScheme.primary,
                     ),
                   ),

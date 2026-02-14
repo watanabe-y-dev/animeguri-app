@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:gap/gap.dart';
 import 'package:ui/component/ranking_list_item/ranking_list_item.dart';
+import 'package:ui/hook/app_theme.dart';
 
 /// 巡礼ランキングセクション
 ///
 /// 期間バッジ付きのランキングリストを表示するセクション
-class PilgrimageRankingSection extends StatelessWidget {
+class PilgrimageRankingSection extends HookWidget {
   const PilgrimageRankingSection({
     required this.rankings,
     this.period = '今週',
@@ -33,14 +35,15 @@ class PilgrimageRankingSection extends StatelessWidget {
   }
 }
 
-class _SectionHeader extends StatelessWidget {
+class _SectionHeader extends HookWidget {
   const _SectionHeader({required this.period});
 
   final String period;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,10 +59,7 @@ class _SectionHeader extends StatelessWidget {
             const Gap(8),
             Text(
               '巡礼ランキング',
-              style: TextStyle(
-                fontFamily: 'Outfit',
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
+              style: textTheme.titleMedium?.copyWith(
                 letterSpacing: -0.2,
                 color: colorScheme.onSurface,
               ),
@@ -73,14 +73,15 @@ class _SectionHeader extends StatelessWidget {
   }
 }
 
-class _PeriodBadge extends StatelessWidget {
+class _PeriodBadge extends HookWidget {
   const _PeriodBadge({required this.label});
 
   final String label;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
 
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
@@ -90,10 +91,8 @@ class _PeriodBadge extends StatelessWidget {
       ),
       child: Text(
         label,
-        style: TextStyle(
-          fontFamily: 'Outfit',
+        style: textTheme.labelSmall?.copyWith(
           fontSize: 11,
-          fontWeight: FontWeight.w600,
           color: colorScheme.onSurfaceVariant,
         ),
       ),

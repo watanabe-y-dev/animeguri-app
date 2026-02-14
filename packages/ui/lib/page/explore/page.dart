@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:ui/hook/app_theme.dart';
 import 'package:ui/page/explore/component/anime_list_section/anime_list_section.dart';
 import 'package:ui/page/explore/component/community_pilgrimage_section/community_pilgrimage_section.dart';
 import 'package:ui/page/explore/component/pilgrimage_ranking_section/pilgrimage_ranking_section.dart'
@@ -21,8 +22,8 @@ class ExplorePage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
 
     return ColoredBox(
       color: colorScheme.surface,
@@ -37,10 +38,7 @@ class ExplorePage extends HookWidget {
                 children: [
                   Text(
                     '発見',
-                    style: TextStyle(
-                      fontFamily: 'Outfit',
-                      fontSize: 28,
-                      fontWeight: FontWeight.normal,
+                    style: textTheme.headlineMedium?.copyWith(
                       letterSpacing: -0.5,
                       color: colorScheme.onSurface,
                     ),
@@ -105,10 +103,7 @@ class ExplorePage extends HookWidget {
                               const SizedBox(width: 12),
                               Text(
                                 '作品名で検索...',
-                                style: TextStyle(
-                                  fontFamily: 'Outfit',
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.normal,
+                                style: textTheme.bodyLarge?.copyWith(
                                   color: colorScheme.onSurfaceVariant,
                                 ),
                               ),

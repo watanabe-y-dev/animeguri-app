@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:gap/gap.dart';
+import 'package:ui/hook/app_theme.dart';
 
-class PilgrimageRankingListItem extends StatelessWidget {
+class PilgrimageRankingListItem extends HookWidget {
   const PilgrimageRankingListItem({
     super.key,
     required this.rank,
@@ -19,7 +21,7 @@ class PilgrimageRankingListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
     return DecoratedBox(
       decoration: BoxDecoration(
         border: Border(
@@ -49,7 +51,7 @@ class PilgrimageRankingListItem extends StatelessWidget {
   }
 }
 
-class _RankBadge extends StatelessWidget {
+class _RankBadge extends HookWidget {
   const _RankBadge({required this.rank});
 
   final int rank;
@@ -72,7 +74,8 @@ class _RankBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return SizedBox(
       width: 28,
       height: 28,
@@ -84,9 +87,7 @@ class _RankBadge extends StatelessWidget {
         child: Center(
           child: Text(
             '$rank',
-            style: TextStyle(
-              fontFamily: 'Outfit',
-              fontSize: 13,
+            style: textTheme.labelMedium?.copyWith(
               fontWeight: FontWeight.w700,
               color: _textColor(colorScheme),
               height: 1,
@@ -98,7 +99,7 @@ class _RankBadge extends StatelessWidget {
   }
 }
 
-class _Thumbnail extends StatelessWidget {
+class _Thumbnail extends HookWidget {
   const _Thumbnail({this.url});
 
   final String? url;
@@ -122,12 +123,12 @@ class _Thumbnail extends StatelessWidget {
   }
 }
 
-class _ThumbnailPlaceholder extends StatelessWidget {
+class _ThumbnailPlaceholder extends HookWidget {
   const _ThumbnailPlaceholder();
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
     return ColoredBox(
       color: colorScheme.outlineVariant,
       child: Center(
@@ -141,7 +142,7 @@ class _ThumbnailPlaceholder extends StatelessWidget {
   }
 }
 
-class _SpotInfo extends StatelessWidget {
+class _SpotInfo extends HookWidget {
   const _SpotInfo({
     required this.spotName,
     required this.animeName,
@@ -152,17 +153,16 @@ class _SpotInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
           spotName,
-          style: TextStyle(
-            fontFamily: 'Outfit',
+          style: textTheme.labelLarge?.copyWith(
             fontSize: 14,
-            fontWeight: FontWeight.w600,
             color: colorScheme.onSurface,
             height: 1,
           ),
@@ -172,10 +172,8 @@ class _SpotInfo extends StatelessWidget {
         const Gap(2),
         Text(
           animeName,
-          style: TextStyle(
-            fontFamily: 'Outfit',
+          style: textTheme.bodySmall?.copyWith(
             fontSize: 11,
-            fontWeight: FontWeight.normal,
             color: colorScheme.onSurfaceVariant,
             height: 1,
           ),
@@ -187,22 +185,21 @@ class _SpotInfo extends StatelessWidget {
   }
 }
 
-class _VisitCount extends StatelessWidget {
+class _VisitCount extends HookWidget {
   const _VisitCount({required this.count});
 
   final int count;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
           '$count',
-          style: TextStyle(
-            fontFamily: 'Outfit',
-            fontSize: 15,
+          style: textTheme.labelLarge?.copyWith(
             fontWeight: FontWeight.w700,
             color: colorScheme.onSurface,
             height: 1,
@@ -211,10 +208,8 @@ class _VisitCount extends StatelessWidget {
         const Gap(2),
         Text(
           '訪問',
-          style: TextStyle(
-            fontFamily: 'Outfit',
+          style: textTheme.labelSmall?.copyWith(
             fontSize: 10,
-            fontWeight: FontWeight.w500,
             color: colorScheme.onSurfaceVariant,
             height: 1,
           ),

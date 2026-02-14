@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:ui/component/section/section.dart';
+import 'package:ui/hook/app_theme.dart';
 
 /// みんなの巡礼セクション
 ///
 /// 左側に大きい写真1つ、右側に小さい写真2つを縦並びで表示するグリッドレイアウト
-class CommunityPilgrimageSection extends StatelessWidget {
+class CommunityPilgrimageSection extends HookWidget {
   const CommunityPilgrimageSection({
     super.key,
     this.onActionTap,
@@ -25,12 +27,12 @@ class CommunityPilgrimageSection extends StatelessWidget {
 }
 
 /// 写真グリッドレイアウト
-class _PhotoGrid extends StatelessWidget {
+class _PhotoGrid extends HookWidget {
   const _PhotoGrid();
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
 
     return SizedBox(
       height: 200,
@@ -86,7 +88,7 @@ enum _PhotoCardUsernameStyle {
 }
 
 /// 写真カード
-class _PhotoCard extends StatelessWidget {
+class _PhotoCard extends HookWidget {
   const _PhotoCard({
     required this.backgroundColor,
     required this.username,
@@ -101,8 +103,8 @@ class _PhotoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
 
     // スタイルに応じた値を設定
     final fontSize =
@@ -149,10 +151,8 @@ class _PhotoCard extends StatelessWidget {
                 // ユーザー名
                 Text(
                   username,
-                  style: TextStyle(
-                    fontFamily: 'Outfit',
+                  style: textTheme.labelSmall?.copyWith(
                     fontSize: fontSize,
-                    fontWeight: FontWeight.w500,
                     color: colorScheme.onPrimary,
                   ),
                 ),

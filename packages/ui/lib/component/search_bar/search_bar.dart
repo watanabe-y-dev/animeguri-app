@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:lucide_icons/lucide_icons.dart';
+import 'package:ui/hook/app_theme.dart';
 
-class AppSearchBar extends StatelessWidget {
+class AppSearchBar extends HookWidget {
   const AppSearchBar({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
+    final textTheme = useTextTheme();
     return Container(
       height: 48,
       width: double.infinity,
@@ -26,9 +29,7 @@ class AppSearchBar extends StatelessWidget {
           const SizedBox(width: 12),
           Text(
             '作品名で検索...',
-            style: TextStyle(
-              fontFamily: 'Outfit',
-              fontSize: 15,
+            style: textTheme.bodyMedium?.copyWith(
               color: colorScheme.onSurfaceVariant,
             ),
           ),

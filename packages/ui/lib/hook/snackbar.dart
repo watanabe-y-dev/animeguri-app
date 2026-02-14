@@ -10,6 +10,7 @@ import 'package:ui/hook/scaffold.dart';
 void Function(String message, {SnackbarType? type}) useSnackbar() {
   final context = useContext();
   final colorScheme = useColorScheme();
+  final textTheme = useTextTheme();
   final messenger = useScaffoldMessenger();
 
   return useCallback(
@@ -34,7 +35,7 @@ void Function(String message, {SnackbarType? type}) useSnackbar() {
         SnackBar(
           content: Text(
             message,
-            style: TextStyle(color: textColor),
+            style: textTheme.bodyMedium?.copyWith(color: textColor),
           ),
           backgroundColor: backgroundColor,
           behavior: SnackBarBehavior.floating,
