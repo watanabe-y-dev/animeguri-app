@@ -41,20 +41,20 @@ class RankingListItem extends HookWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
             child: Row(
-          children: [
-            _RankBadge(rank: rank),
-            const Gap(12),
-            _Thumbnail(url: thumbnailUrl),
-            const Gap(12),
-            Expanded(
-              child: _ItemInfo(
-                title: title,
-                subtitle: subtitle,
-              ),
-            ),
-            const Gap(12),
-            _CountInfo(count: count, unit: unit),
-          ],
+              children: [
+                _RankBadge(rank: rank),
+                const Gap(12),
+                _Thumbnail(url: thumbnailUrl),
+                const Gap(12),
+                Expanded(
+                  child: _ItemInfo(
+                    title: title,
+                    subtitle: subtitle,
+                  ),
+                ),
+                const Gap(12),
+                _CountInfo(count: count, unit: unit),
+              ],
             ),
           ),
         ),

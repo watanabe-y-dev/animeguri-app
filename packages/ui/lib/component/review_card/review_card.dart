@@ -41,26 +41,26 @@ class ReviewCard extends HookWidget {
           splashColor: colorScheme.primary.withValues(alpha: 0.1),
           highlightColor: colorScheme.primary.withValues(alpha: 0.05),
           child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            _Header(
-              avatarUrl: avatarUrl,
-              userName: userName,
-              timeAgo: timeAgo,
-            ),
-            const SizedBox(height: 12),
-            _StarRating(rating: rating),
-            const SizedBox(height: 12),
-            _Comment(comment: comment),
-            const SizedBox(height: 12),
-            _SpotInfo(
-              spotName: spotName,
-              animeName: animeName,
-            ),
-          ],
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                _Header(
+                  avatarUrl: avatarUrl,
+                  userName: userName,
+                  timeAgo: timeAgo,
+                ),
+                const SizedBox(height: 12),
+                _StarRating(rating: rating),
+                const SizedBox(height: 12),
+                _Comment(comment: comment),
+                const SizedBox(height: 12),
+                _SpotInfo(
+                  spotName: spotName,
+                  animeName: animeName,
+                ),
+              ],
             ),
           ),
         ),
