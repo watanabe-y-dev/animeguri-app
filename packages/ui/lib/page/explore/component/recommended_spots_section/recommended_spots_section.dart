@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:ui/component/section/section.dart';
 import 'package:ui/component/spot_list_item/spot_list_item.dart';
+import 'package:ui/hook/app_theme.dart';
 
 /// おすすめ聖地セクション
 ///
 /// おすすめの聖地スポットを縦リストで表示するセクション
-class RecommendedSpotsSection extends StatelessWidget {
+class RecommendedSpotsSection extends HookWidget {
   const RecommendedSpotsSection({
     super.key,
     this.onSeeAllTap,
@@ -16,7 +18,7 @@ class RecommendedSpotsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = useColorScheme();
 
     return Section(
       title: 'おすすめ聖地',
