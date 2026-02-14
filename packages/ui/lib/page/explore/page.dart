@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:ui/component/search_bar/search_bar.dart';
 import 'package:ui/hook/app_theme.dart';
 import 'package:ui/page/explore/component/anime_list_section/anime_list_section.dart';
 import 'package:ui/page/explore/component/community_pilgrimage_section/community_pilgrimage_section.dart';
@@ -80,36 +81,9 @@ class ExplorePage extends HookWidget {
                     // 検索バー
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 24),
-                      child: GestureDetector(
+                      child: AppSearchBar(
                         onTap: () =>
                             onEvent(const ExplorePageEvent.searchBarTapped()),
-                        child: Container(
-                          height: 48,
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          decoration: BoxDecoration(
-                            color: colorScheme.surfaceContainerLowest,
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(
-                              color: colorScheme.outlineVariant,
-                            ),
-                          ),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.search,
-                                color: colorScheme.onSurfaceVariant,
-                                size: 18,
-                              ),
-                              const SizedBox(width: 12),
-                              Text(
-                                '作品名で検索...',
-                                style: textTheme.bodyLarge?.copyWith(
-                                  color: colorScheme.onSurfaceVariant,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
                       ),
                     ),
                     const SizedBox(height: 32),
