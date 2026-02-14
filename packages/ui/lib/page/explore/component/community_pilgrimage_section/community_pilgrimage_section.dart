@@ -153,7 +153,7 @@ class _PhotoCard extends HookWidget {
                   username,
                   style: textTheme.labelSmall?.copyWith(
                     fontSize: fontSize,
-                    color: colorScheme.onPrimary,
+                    color: colorScheme.onSurface,
                   ),
                 ),
               ],
