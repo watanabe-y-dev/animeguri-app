@@ -8288,6 +8288,115 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9ZUbm",
+                  "name": "OfficialLinks",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xC4LV",
+                      "name": "WebsiteLink",
+                      "fill": "$surfaceContainerLowest",
+                      "cornerRadius": 100,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$outlineVariant"
+                      },
+                      "gap": 6,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "C54zL",
+                          "name": "webIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "globe",
+                          "iconFontFamily": "lucide",
+                          "fill": "$onSurfaceVariant"
+                        },
+                        {
+                          "type": "text",
+                          "id": "1QZbP",
+                          "name": "webText",
+                          "fill": "$onSurface",
+                          "content": "公式サイト",
+                          "fontFamily": "Outfit",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "iQsDi",
+                          "name": "webArrow",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "external-link",
+                          "iconFontFamily": "lucide",
+                          "fill": "$onSurfaceDisabled"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IJIAB",
+                      "name": "XLink",
+                      "fill": "$surfaceContainerLowest",
+                      "cornerRadius": 100,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$outlineVariant"
+                      },
+                      "gap": 6,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "h5H3x",
+                          "name": "xIcon",
+                          "fill": "$onSurfaceVariant",
+                          "content": "𝕏",
+                          "fontFamily": "Outfit",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pe5Gv",
+                          "name": "xText",
+                          "fill": "$onSurface",
+                          "content": "公式",
+                          "fontFamily": "Outfit",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "g3pej",
+                          "name": "xArrow",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "external-link",
+                          "iconFontFamily": "lucide",
+                          "fill": "$onSurfaceDisabled"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
