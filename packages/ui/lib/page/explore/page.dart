@@ -39,8 +39,8 @@ class ExplorePage extends HookWidget {
                     '発見',
                     style: TextStyle(
                       fontFamily: 'Outfit',
-                      fontSize: 26,
-                      fontWeight: FontWeight.w600,
+                      fontSize: 28,
+                      fontWeight: FontWeight.normal,
                       letterSpacing: -0.5,
                       color: colorScheme.onSurface,
                     ),
@@ -92,7 +92,7 @@ class ExplorePage extends HookWidget {
                             color: colorScheme.surfaceContainerLowest,
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(
-                              color: colorScheme.outline,
+                              color: colorScheme.outlineVariant,
                             ),
                           ),
                           child: Row(
@@ -107,7 +107,7 @@ class ExplorePage extends HookWidget {
                                 '作品名で検索...',
                                 style: TextStyle(
                                   fontFamily: 'Outfit',
-                                  fontSize: 15,
+                                  fontSize: 16,
                                   fontWeight: FontWeight.normal,
                                   color: colorScheme.onSurfaceVariant,
                                 ),
@@ -117,7 +117,7 @@ class ExplorePage extends HookWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 32),
                     // 話題の作品
                     const TrendingAnimeSection(),
                     const SizedBox(height: 32),
