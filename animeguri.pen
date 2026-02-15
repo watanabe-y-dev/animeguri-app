@@ -6326,13 +6326,13 @@
                   "ref": "km1GS",
                   "name": "BackButton",
                   "x": 16,
-                  "y": 52
+                  "y": 8
                 },
                 {
                   "type": "frame",
                   "id": "vdjJS",
                   "x": 346,
-                  "y": 52,
+                  "y": 8,
                   "name": "ShareButton",
                   "width": 40,
                   "height": 40,
@@ -8058,6 +8058,7 @@
               "name": "AppBar",
               "width": "fill_container",
               "height": 56,
+              "fill": "$primaryContainer",
               "padding": [
                 0,
                 8
@@ -8070,29 +8071,6 @@
                   "type": "ref",
                   "ref": "km1GS",
                   "name": "BackButton"
-                },
-                {
-                  "type": "frame",
-                  "id": "Xvpjz",
-                  "name": "AddButton",
-                  "width": 40,
-                  "height": 40,
-                  "cornerRadius": 100,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "icon_font",
-                      "id": "hm3fT",
-                      "x": 10,
-                      "y": 10,
-                      "name": "addIcon",
-                      "width": 20,
-                      "height": 20,
-                      "iconFontName": "plus",
-                      "iconFontFamily": "lucide",
-                      "fill": "$onSurface"
-                    }
-                  ]
                 }
               ]
             },
@@ -9248,7 +9226,7 @@
                       "name": "backIcon",
                       "width": 20,
                       "height": 20,
-                      "iconFontName": "arrow-left",
+                      "iconFontName": "chevron-left",
                       "iconFontFamily": "lucide",
                       "fill": "$onSurface"
                     }
@@ -10487,29 +10465,6 @@
                   "fontSize": 18,
                   "fontWeight": "600",
                   "letterSpacing": 0.1
-                },
-                {
-                  "type": "frame",
-                  "id": "ORA7H",
-                  "name": "SearchButton",
-                  "width": 40,
-                  "height": 40,
-                  "cornerRadius": 100,
-                  "layout": "vertical",
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "icon_font",
-                      "id": "mzkP9",
-                      "name": "searchIcon",
-                      "width": 20,
-                      "height": 20,
-                      "iconFontName": "search",
-                      "iconFontFamily": "lucide",
-                      "fill": "$onSurface"
-                    }
-                  ]
                 }
               ]
             },
@@ -11008,6 +10963,7 @@
                 0,
                 16
               ],
+              "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
                 {
@@ -11016,7 +10972,7 @@
                   "name": "bk2",
                   "width": 24,
                   "height": 24,
-                  "iconFontName": "arrow-left",
+                  "iconFontName": "chevron-left",
                   "iconFontFamily": "lucide",
                   "fill": "$onSurface"
                 },
@@ -11025,20 +10981,20 @@
                   "id": "NfQvd",
                   "name": "hT2",
                   "fill": "$onSurface",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
                   "content": "みんなの巡礼",
+                  "textAlign": "center",
                   "fontFamily": "Outfit",
                   "fontSize": 18,
                   "fontWeight": "600"
                 },
                 {
-                  "type": "icon_font",
-                  "id": "3qQxf",
-                  "name": "srch2",
-                  "width": 20,
-                  "height": 20,
-                  "iconFontName": "search",
-                  "iconFontFamily": "lucide",
-                  "fill": "$onSurfaceVariant"
+                  "type": "frame",
+                  "id": "s1dUc",
+                  "name": "Spacer",
+                  "width": 24,
+                  "height": 24
                 }
               ]
             },
@@ -12064,6 +12020,7 @@
                 0,
                 16
               ],
+              "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
                 {
@@ -12072,7 +12029,7 @@
                   "name": "bk3",
                   "width": 24,
                   "height": 24,
-                  "iconFontName": "arrow-left",
+                  "iconFontName": "chevron-left",
                   "iconFontFamily": "lucide",
                   "fill": "$onSurface"
                 },
@@ -12081,20 +12038,20 @@
                   "id": "U4Lnh",
                   "name": "ht3",
                   "fill": "$onSurface",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
                   "content": "作品から探す",
+                  "textAlign": "center",
                   "fontFamily": "Outfit",
                   "fontSize": 18,
                   "fontWeight": "600"
                 },
                 {
-                  "type": "icon_font",
-                  "id": "GE9hO",
-                  "name": "sr3",
-                  "width": 20,
-                  "height": 20,
-                  "iconFontName": "search",
-                  "iconFontFamily": "lucide",
-                  "fill": "$onSurfaceVariant"
+                  "type": "frame",
+                  "id": "vxSos",
+                  "name": "Spacer",
+                  "width": 24,
+                  "height": 24
                 }
               ]
             },
@@ -13610,7 +13567,7 @@
                   "name": "icon",
                   "width": 20,
                   "height": 20,
-                  "iconFontName": "arrow-left",
+                  "iconFontName": "chevron-left",
                   "iconFontFamily": "lucide",
                   "fill": "$onSurface"
                 }
