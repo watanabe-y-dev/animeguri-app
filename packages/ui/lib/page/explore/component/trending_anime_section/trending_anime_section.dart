@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui/component/anime_card/anime_card.dart';
-import 'package:ui/component/section/section_header.dart';
+import 'package:ui/component/section_header/section_header.dart';
 
 /// 話題の作品セクション
 ///

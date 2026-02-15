@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:ui/component/section/section_header.dart';
+import 'package:ui/component/section_header/section_header.dart';
 import 'package:ui/component/spot_list_item/spot_list_item.dart';
 import 'package:ui/hook/app_theme.dart';
 

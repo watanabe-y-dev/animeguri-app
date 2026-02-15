@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui/component/review_card/review_card.dart';
-import 'package:ui/component/section/section_header.dart';
+import 'package:ui/component/section_header/section_header.dart';
 
 /// 最近のレビューセクション
 ///
