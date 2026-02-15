@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:ui/hook/app_theme.dart';
 
-/// セクションウィジェット
+/// セクションヘッダーウィジェット
 ///
 /// タイトルとアクションリンク、コンテンツエリアを持つ汎用コンポーネント
-class Section extends HookWidget {
-  const Section({
+class SectionHeader extends HookWidget {
+  const SectionHeader({
     required this.title,
     required this.child,
     this.actionLabel,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:ui/component/section/section.dart';
+import 'package:ui/component/section/section_header.dart';
 import 'package:ui/hook/app_theme.dart';
 
 /// みんなの巡礼セクション
@@ -17,7 +17,7 @@ class CommunityPilgrimageSection extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Section(
+    return SectionHeader(
       title: 'みんなの巡礼',
       actionLabel: 'もっと見る',
       onActionTap: onActionTap,

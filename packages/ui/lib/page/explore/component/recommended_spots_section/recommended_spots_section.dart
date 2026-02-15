@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:ui/component/section/section.dart';
+import 'package:ui/component/section/section_header.dart';
 import 'package:ui/component/spot_list_item/spot_list_item.dart';
 import 'package:ui/hook/app_theme.dart';
 
@@ -20,7 +20,7 @@ class RecommendedSpotsSection extends HookWidget {
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
 
-    return Section(
+    return SectionHeader(
       title: 'おすすめ聖地',
       actionLabel: 'すべて',
       onActionTap: onSeeAllTap,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui/component/review_card/review_card.dart';
-import 'package:ui/component/section/section.dart';
+import 'package:ui/component/section/section_header.dart';
 
 /// 最近のレビューセクション
 ///
@@ -10,7 +10,7 @@ class RecentReviewsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Section(
+    return SectionHeader(
       title: '最近のレビュー',
       actionLabel: 'もっと見る',
       onActionTap: () {

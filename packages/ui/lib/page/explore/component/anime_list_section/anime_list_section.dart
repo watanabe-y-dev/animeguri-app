@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui/component/anime_badge/anime_badge.dart';
-import 'package:ui/component/section/section.dart';
+import 'package:ui/component/section/section_header.dart';
 
 /// 作品から探すセクション
 ///
@@ -10,7 +10,7 @@ class AnimeListSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Section(
+    return SectionHeader(
       title: '作品から探す',
       actionLabel: 'すべて',
       onActionTap: () {

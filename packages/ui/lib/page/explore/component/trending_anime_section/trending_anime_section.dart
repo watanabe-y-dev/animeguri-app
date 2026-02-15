@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui/component/anime_card/anime_card.dart';
-import 'package:ui/component/section/section.dart';
+import 'package:ui/component/section/section_header.dart';
 
 /// 話題の作品セクション
 ///
@@ -16,7 +16,7 @@ class TrendingAnimeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Section(
+    return SectionHeader(
       title: '話題の作品',
       actionLabel: 'すべて',
       onActionTap: onSeeAllTap,
