@@ -7,8 +7,8 @@ import 'package:ui/hook/app_theme.dart';
 /// 巡礼ランキングセクション
 ///
 /// 期間バッジ付きのランキングリストを表示するセクション
-class PilgrimageRankingSection extends HookWidget {
-  const PilgrimageRankingSection({
+class SpotRankingSection extends HookWidget {
+  const SpotRankingSection({
     required this.rankings,
     this.period = '今週',
     super.key,

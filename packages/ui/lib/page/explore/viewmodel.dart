@@ -23,6 +23,14 @@ class ExplorePageViewModel extends _$ExplorePageViewModel
           effect(const ExplorePageEffect.navigateToSearch()),
       notificationButtonTapped: () =>
           effect(const ExplorePageEffect.navigateToNotifications()),
+      reviewsSectionActionTapped: () =>
+          effect(const ExplorePageEffect.navigateToReviews()),
+      recommendedSpotsSectionActionTapped: () =>
+          effect(const ExplorePageEffect.navigateToRecommendedSpots()),
+      communitySpotSectionActionTapped: () =>
+          effect(const ExplorePageEffect.navigateToCommunitySpot()),
+      animeListSectionActionTapped: () =>
+          effect(const ExplorePageEffect.navigateToAnimeList()),
     );
   }
 

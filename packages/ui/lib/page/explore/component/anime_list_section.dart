@@ -6,16 +6,20 @@ import 'package:ui/component/section_header/section_header.dart';
 ///
 /// アニメバッジをグリッド状に表示するセクションコンポーネント
 class AnimeListSection extends StatelessWidget {
-  const AnimeListSection({super.key});
+  const AnimeListSection({
+    super.key,
+    this.onActionTap,
+  });
+
+  /// 「すべて」タップ時のコールバック
+  final VoidCallback? onActionTap;
 
   @override
   Widget build(BuildContext context) {
     return SectionHeader(
       title: '作品から探す',
       actionLabel: 'すべて',
-      onActionTap: () {
-        // TODO: 全アニメ一覧画面への遷移
-      },
+      onActionTap: onActionTap,
       child: const _BadgeGrid(),
     );
   }

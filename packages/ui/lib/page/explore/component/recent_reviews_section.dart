@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/component/review_card/review_card.dart';
 import 'package:ui/component/section_header/section_header.dart';
 
@@ -6,16 +7,20 @@ import 'package:ui/component/section_header/section_header.dart';
 ///
 /// 横スクロール可能なレビューカードリストを表示する
 class RecentReviewsSection extends StatelessWidget {
-  const RecentReviewsSection({super.key});
+  const RecentReviewsSection({
+    super.key,
+    this.onActionTap,
+  });
+
+  /// 「もっと見る」タップ時のコールバック
+  final VoidCallback? onActionTap;
 
   @override
   Widget build(BuildContext context) {
     return SectionHeader(
       title: '最近のレビュー',
       actionLabel: 'もっと見る',
-      onActionTap: () {
-        // TODO: レビュー一覧画面への遷移
-      },
+      onActionTap: onActionTap,
       headerPadding: const EdgeInsets.symmetric(horizontal: 24),
       child: SizedBox(
         height: 240,
@@ -23,7 +28,7 @@ class RecentReviewsSection extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 24),
           itemCount: _mockReviews.length,
-          separatorBuilder: (context, index) => const SizedBox(width: 12),
+          separatorBuilder: (context, index) => const Gap(12),
           itemBuilder: (context, index) {
             final review = _mockReviews[index];
             return ReviewCard(

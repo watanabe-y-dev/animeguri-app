@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/component/section_header/section_header.dart';
 import 'package:ui/hook/app_theme.dart';
 
 /// みんなの巡礼セクション
 ///
 /// 左側に大きい写真1つ、右側に小さい写真2つを縦並びで表示するグリッドレイアウト
-class CommunityPilgrimageSection extends HookWidget {
-  const CommunityPilgrimageSection({
+class CommunitySpotSection extends HookWidget {
+  const CommunitySpotSection({
     super.key,
     this.onActionTap,
   });
@@ -47,7 +48,7 @@ class _PhotoGrid extends HookWidget {
               usernameStyle: _PhotoCardUsernameStyle.large,
             ),
           ),
-          const SizedBox(width: 8),
+          const Gap(8),
           // 右側：小さい写真2つを縦並び
           Expanded(
             child: Column(
@@ -60,7 +61,7 @@ class _PhotoGrid extends HookWidget {
                     usernameStyle: _PhotoCardUsernameStyle.small,
                   ),
                 ),
-                const SizedBox(height: 8),
+                const Gap(8),
                 Expanded(
                   child: _PhotoCard(
                     backgroundColor: colorScheme.surfaceContainerHigh,
@@ -147,7 +148,7 @@ class _PhotoCard extends HookWidget {
                     shape: BoxShape.circle,
                   ),
                 ),
-                SizedBox(width: gap),
+                Gap(gap),
                 // ユーザー名
                 Text(
                   username,
