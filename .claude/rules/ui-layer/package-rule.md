@@ -1,5 +1,5 @@
 ---
-paths: packages/ui/lib/page/**/*
+paths: packages/ui/**/*
 ---
 
 # UI パッケージの構造
@@ -47,9 +47,9 @@ packages/ui/lib/
 │   │   ├── viewmodel.contract.dart
 │   │   ├── preview.dart
 │   │   └── component/           # ページ固有のコンポーネント
-│   │       ├── trending_anime_section/
-│   │       ├── pilgrimage_ranking_section/
-│   │       └── anime_list_section/
+│   │       ├── trending_anime_section.dart
+│   │       ├── spot_ranking_section.dart
+│   │       └── anime_list_section.dart
 │   ├── account/
 │   ├── map/
 │   └── ...
@@ -99,17 +99,22 @@ component/
 **例:**
 ```
 page/explore/component/
-├── trending_anime_section/       # 話題の作品セクション
-├── pilgrimage_ranking_section/   # 巡礼ランキングセクション
-└── anime_list_section/           # 作品から探すセクション
+├── trending_anime_section.dart       # 話題の作品セクション
+├── spot_ranking_section.dart         # スポットランキングセクション
+└── anime_list_section.dart           # 作品から探すセクション
 ```
 
 **ファイル構成:**
 ```
 page/explore/component/
-└── trending_anime_section/
-    └── trending_anime_section.dart  # セクション本体（プレビューは不要）
+├── trending_anime_section.dart      # セクション本体
+├── spot_ranking_section.dart
+└── anime_list_section.dart
 ```
+
+**ルール:**
+- ページ固有コンポーネントは単一ファイルで完結するため、ディレクトリを作らず直接配置
+- プレビューファイルは基本的に不要（ページ全体でプレビュー可能なため）
 
 ## 判断基準: 汎用 vs ページ固有
 
@@ -125,7 +130,7 @@ page/explore/component/
 
 ✅ **RankingListItem**
 - 理由: ランキング表示は様々な種類のランキングで使える
-- 使用例: 巡礼ランキング、アニメランキング、ユーザーランキングなど
+- 使用例: スポットランキング、アニメランキング、ユーザーランキングなど
 
 ✅ **Section**
 - 理由: セクション構造は汎用的なレイアウトパターン
@@ -137,8 +142,8 @@ page/explore/component/
 - 理由: 発見ページの特定のセクション
 - 構成: `Section` + `AnimeCard` のリスト + ページ固有のロジック
 
-✅ **PilgrimageRankingSection**
-- 理由: 発見ページの巡礼ランキングセクション
+✅ **SpotRankingSection**
+- 理由: 発見ページのスポットランキングセクション
 - 構成: カスタムヘッダー + `RankingListItem` のリスト
 
 ✅ **AnimeListSection**
@@ -217,7 +222,7 @@ page/{page_name}/
     └── section_b/
 ```
 
-詳細は `.claude/rules/ui-layer/coding-guide.md` を参照してください。
+詳細は `.claude/rules/ui-layer/page-rule.md` を参照してください。
 
 ## まとめ
 
