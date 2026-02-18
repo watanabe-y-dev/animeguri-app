@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/hook/app_theme.dart';
 
 /// セクションヘッダーウィジェット
@@ -47,7 +48,10 @@ class SectionHeader extends HookWidget {
               Text(
                 title,
                 style: textTheme.titleMedium?.copyWith(
-                  letterSpacing: -0.2,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  letterSpacing: 0.1,
+                  height: 1.429,
                   color: colorScheme.onSurface,
                 ),
               ),
@@ -62,6 +66,10 @@ class SectionHeader extends HookWidget {
                   child: Text(
                     actionLabel!,
                     style: textTheme.labelMedium?.copyWith(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: 0.5,
+                      height: 1.15,
                       color: colorScheme.primary,
                     ),
                   ),
@@ -69,7 +77,7 @@ class SectionHeader extends HookWidget {
             ],
           ),
         ),
-        const SizedBox(height: 16),
+        const Gap(16),
         // コンテンツ
         child,
       ],

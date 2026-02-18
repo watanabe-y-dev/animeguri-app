@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/hook/app_theme.dart';
 
 enum SpotBadgeType {
@@ -62,7 +63,7 @@ class SpotListItem extends HookWidget {
                     ),
                   ),
                 ),
-                const SizedBox(width: 14),
+                const Gap(14),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -75,7 +76,7 @@ class SpotListItem extends HookWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      const SizedBox(height: 6),
+                      const Gap(6),
                       Row(
                         children: [
                           Flexible(
@@ -89,7 +90,7 @@ class SpotListItem extends HookWidget {
                             ),
                           ),
                           if (badge != null) ...[
-                            const SizedBox(width: 6),
+                            const Gap(6),
                             _SpotBadge(type: badge!),
                           ],
                         ],

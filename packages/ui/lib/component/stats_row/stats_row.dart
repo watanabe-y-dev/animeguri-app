@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/hook/app_theme.dart';
 
 class StatItem {
@@ -81,7 +82,7 @@ class _StatItemView extends StatelessWidget {
               letterSpacing: -0.5,
             ),
           ),
-          const SizedBox(height: 2),
+          const Gap(2),
           Text(
             item.label,
             style: textTheme.labelSmall?.copyWith(

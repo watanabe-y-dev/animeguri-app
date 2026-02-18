@@ -17,7 +17,7 @@ Widget previewAnimeCard() {
           child: AnimeCard(
             imageUrl: 'https://picsum.photos/140/90',
             title: 'ぼっち・ざ・ろっく！',
-            pilgrimageCount: 12,
+            spotCount: 12,
           ),
         ),
       ),

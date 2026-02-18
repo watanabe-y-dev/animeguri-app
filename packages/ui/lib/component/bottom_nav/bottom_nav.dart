@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/hook/app_theme.dart';
 
 class BottomNavItem {
@@ -62,7 +63,7 @@ class BottomNav extends HookWidget {
                     size: 22,
                     color: color,
                   ),
-                  const SizedBox(height: 4),
+                  const Gap(4),
                   Text(
                     item.label,
                     style: textTheme.labelSmall?.copyWith(
