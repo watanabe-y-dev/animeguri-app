@@ -35,5 +35,23 @@ class AppRouter extends RootStackRouter {
         AutoRoute(
           page: SampleRoute.page,
         ),
+        AutoRoute(
+          page: AnimeDetailRoute.page,
+        ),
+        AutoRoute(
+          page: AnimeListRoute.page,
+        ),
+        AutoRoute(
+          page: CommunitySpotRoute.page,
+        ),
+        AutoRoute(
+          page: RecommendedSpotsRoute.page,
+        ),
+        AutoRoute(
+          page: ReviewsRoute.page,
+        ),
+        AutoRoute(
+          page: SpotDetailRoute.page,
+        ),
       ];
 }
