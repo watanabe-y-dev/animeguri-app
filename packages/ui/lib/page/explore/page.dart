@@ -26,26 +26,25 @@ class ExplorePage extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
-    final textTheme = useTextTheme();
 
     return ColoredBox(
       color: colorScheme.surface,
       child: SafeArea(
         child: Column(
           children: [
-            // ヘッダー
+            // ヘッダー（検索バー + 通知ボタン）
             Padding(
               padding: const EdgeInsets.fromLTRB(24, 16, 24, 0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    '発見',
-                    style: textTheme.headlineMedium?.copyWith(
-                      letterSpacing: -0.5,
-                      color: colorScheme.onSurface,
+                  Expanded(
+                    child: AppSearchBar(
+                      onTap: () => onEvent(
+                        const ExplorePageEvent.searchBarTapped(),
+                      ),
                     ),
                   ),
+                  const Gap(12),
                   NotificationButton(
                     onPressed: () => onEvent(
                       const ExplorePageEvent.notificationButtonTapped(),
@@ -60,15 +59,6 @@ class ExplorePage extends HookWidget {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    // 検索バー
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 24),
-                      child: AppSearchBar(
-                        onTap: () =>
-                            onEvent(const ExplorePageEvent.searchBarTapped()),
-                      ),
-                    ),
-                    const Gap(32),
                     // おすすめ聖地
                     RecommendedSpotsSection(
                       onSeeAllTap: () => onEvent(
