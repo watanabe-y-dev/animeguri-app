@@ -57,23 +57,56 @@
                   "id": "D4VEf",
                   "name": "Header",
                   "width": "fill_container",
+                  "gap": 12,
                   "padding": [
                     0,
                     24
                   ],
-                  "justifyContent": "space_between",
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "LMcZ8",
-                      "name": "titleText",
-                      "fill": "#1A1918",
-                      "content": "発見",
-                      "lineHeight": 1.286,
-                      "fontFamily": "Outfit",
-                      "fontSize": 26,
-                      "fontWeight": "600"
+                      "type": "frame",
+                      "id": "EBNqE",
+                      "name": "SearchBar",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E4E1"
+                      },
+                      "gap": 12,
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "nFPvk",
+                          "name": "searchIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "search",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9C9B99"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TE4b3",
+                          "name": "searchText",
+                          "fill": "#9C9B99",
+                          "content": "作品名で検索...",
+                          "lineHeight": 1.15,
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.4
+                        }
+                      ]
                     },
                     {
                       "type": "frame",
@@ -108,50 +141,6 @@
                           "fill": "#1A1918"
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "EBNqE",
-                  "name": "SearchBar",
-                  "width": "fill_container",
-                  "height": 48,
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 12,
-                  "stroke": {
-                    "align": "inside",
-                    "thickness": 1,
-                    "fill": "#E5E4E1"
-                  },
-                  "gap": 12,
-                  "padding": [
-                    0,
-                    24
-                  ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "icon_font",
-                      "id": "nFPvk",
-                      "name": "searchIcon",
-                      "width": 18,
-                      "height": 18,
-                      "iconFontName": "search",
-                      "iconFontFamily": "lucide",
-                      "fill": "#9C9B99"
-                    },
-                    {
-                      "type": "text",
-                      "id": "TE4b3",
-                      "name": "searchText",
-                      "fill": "#9C9B99",
-                      "content": "作品名で検索...",
-                      "lineHeight": 1.15,
-                      "fontFamily": "Outfit",
-                      "fontSize": 16,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.4
                     }
                   ]
                 },
@@ -4259,23 +4248,56 @@
                   "id": "MogRK",
                   "name": "Header",
                   "width": "fill_container",
+                  "gap": 12,
                   "padding": [
                     0,
                     24
                   ],
-                  "justifyContent": "space_between",
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "QHxBZ",
-                      "name": "titleText",
-                      "fill": "#1A1918",
-                      "content": "発見",
-                      "lineHeight": 1.286,
-                      "fontFamily": "Outfit",
-                      "fontSize": 26,
-                      "fontWeight": "600"
+                      "type": "frame",
+                      "id": "ncfih",
+                      "name": "SearchBar",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "$surfaceContainerLowest",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$outlineVariant"
+                      },
+                      "gap": 12,
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "wXEtN",
+                          "name": "searchIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "search",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9C9B99"
+                        },
+                        {
+                          "type": "text",
+                          "id": "30z6T",
+                          "name": "searchText",
+                          "fill": "#9C9B99",
+                          "content": "作品名で検索...",
+                          "lineHeight": 1.15,
+                          "fontFamily": "Outfit",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.4
+                        }
+                      ]
                     },
                     {
                       "type": "frame",
@@ -4310,50 +4332,6 @@
                           "fill": "#1A1918"
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "ncfih",
-                  "name": "SearchBar",
-                  "width": "fill_container",
-                  "height": 48,
-                  "fill": "$surfaceContainerLowest",
-                  "cornerRadius": 12,
-                  "stroke": {
-                    "align": "inside",
-                    "thickness": 1,
-                    "fill": "$outlineVariant"
-                  },
-                  "gap": 12,
-                  "padding": [
-                    0,
-                    24
-                  ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "icon_font",
-                      "id": "wXEtN",
-                      "name": "searchIcon",
-                      "width": 18,
-                      "height": 18,
-                      "iconFontName": "search",
-                      "iconFontFamily": "lucide",
-                      "fill": "#9C9B99"
-                    },
-                    {
-                      "type": "text",
-                      "id": "30z6T",
-                      "name": "searchText",
-                      "fill": "#9C9B99",
-                      "content": "作品名で検索...",
-                      "lineHeight": 1.15,
-                      "fontFamily": "Outfit",
-                      "fontSize": 16,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.4
                     }
                   ]
                 },
@@ -6835,7 +6813,7 @@
               "name": "navExplore",
               "height": 84,
               "x": 0,
-              "y": 1767
+              "y": 1691
             }
           ]
         },
