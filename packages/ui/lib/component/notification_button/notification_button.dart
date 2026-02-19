@@ -19,7 +19,7 @@ class NotificationButton extends HookWidget {
       height: 44,
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: colorScheme.surfaceContainerHighest,
+          color: colorScheme.surfaceContainerLowest,
           borderRadius: BorderRadius.circular(22),
           boxShadow: [
             BoxShadow(
