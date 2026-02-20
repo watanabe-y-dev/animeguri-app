@@ -28,10 +28,8 @@ class AnimeDetailPage extends HookWidget {
 
     return ColoredBox(
       color: colorScheme.surface,
-      child: SafeArea(
-        top: false,
-        child: Column(
-          children: [
+      child: Column(
+        children: [
             // AppBar
             ColoredBox(
               color: colorScheme.primaryContainer,
@@ -224,7 +222,6 @@ class AnimeDetailPage extends HookWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }

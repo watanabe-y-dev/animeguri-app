@@ -200,39 +200,37 @@ class _PhotoGrid extends HookWidget {
 
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: IntrinsicHeight(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-              child: Column(
-                children: [
-                  for (final post in leftPosts) ...[
-                    _PostCard(
-                      post: post,
-                      onTap: () => onPostTap(post.id),
-                    ),
-                    const Gap(8),
-                  ],
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Column(
+              children: [
+                for (final post in leftPosts) ...[
+                  _PostCard(
+                    post: post,
+                    onTap: () => onPostTap(post.id),
+                  ),
+                  const Gap(8),
                 ],
-              ),
+              ],
             ),
-            const Gap(8),
-            Expanded(
-              child: Column(
-                children: [
-                  for (final post in rightPosts) ...[
-                    _PostCard(
-                      post: post,
-                      onTap: () => onPostTap(post.id),
-                    ),
-                    const Gap(8),
-                  ],
+          ),
+          const Gap(8),
+          Expanded(
+            child: Column(
+              children: [
+                for (final post in rightPosts) ...[
+                  _PostCard(
+                    post: post,
+                    onTap: () => onPostTap(post.id),
+                  ),
+                  const Gap(8),
                 ],
-              ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
