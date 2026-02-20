@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/component/notification_button/notification_button.dart';
 import 'package:ui/component/search_bar/search_bar.dart';
 import 'package:ui/hook/app_theme.dart';
-import 'package:ui/page/explore/component/anime_list_section/anime_list_section.dart';
-import 'package:ui/page/explore/component/community_pilgrimage_section/community_pilgrimage_section.dart';
-import 'package:ui/page/explore/component/pilgrimage_ranking_section/pilgrimage_ranking_section.dart'
-    show PilgrimageRankingSection, mockRankingData;
-import 'package:ui/page/explore/component/recent_reviews_section/recent_reviews_section.dart';
-import 'package:ui/page/explore/component/recommended_spots_section/recommended_spots_section.dart';
-import 'package:ui/page/explore/component/trending_anime_section/trending_anime_section.dart';
+import 'package:ui/page/explore/component/anime_list_section.dart';
+import 'package:ui/page/explore/component/community_spot_section.dart';
+import 'package:ui/page/explore/component/recent_reviews_section.dart';
+import 'package:ui/page/explore/component/recommended_spots_section.dart';
+import 'package:ui/page/explore/component/spot_ranking_section.dart'
+    show SpotRankingSection, mockRankingData;
+import 'package:ui/page/explore/component/trending_anime_section.dart';
 import 'package:ui/page/explore/viewmodel.dart';
 
 class ExplorePage extends HookWidget {
@@ -25,26 +26,25 @@ class ExplorePage extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = useColorScheme();
-    final textTheme = useTextTheme();
 
     return ColoredBox(
       color: colorScheme.surface,
       child: SafeArea(
         child: Column(
           children: [
-            // ヘッダー
+            // ヘッダー（検索バー + 通知ボタン）
             Padding(
               padding: const EdgeInsets.fromLTRB(24, 16, 24, 0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    '発見',
-                    style: textTheme.headlineMedium?.copyWith(
-                      letterSpacing: -0.5,
-                      color: colorScheme.onSurface,
+                  Expanded(
+                    child: AppSearchBar(
+                      onTap: () => onEvent(
+                        const ExplorePageEvent.searchBarTapped(),
+                      ),
                     ),
                   ),
+                  const Gap(12),
                   NotificationButton(
                     onPressed: () => onEvent(
                       const ExplorePageEvent.notificationButtonTapped(),
@@ -53,53 +53,63 @@ class ExplorePage extends HookWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 16),
+            const Gap(16),
             // コンテンツ
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    // 検索バー
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 24),
-                      child: AppSearchBar(
-                        onTap: () =>
-                            onEvent(const ExplorePageEvent.searchBarTapped()),
+                    // おすすめ聖地
+                    RecommendedSpotsSection(
+                      onSeeAllTap: () => onEvent(
+                        const ExplorePageEvent
+                            .recommendedSpotsSectionActionTapped(),
                       ),
                     ),
-                    const SizedBox(height: 32),
+                    const Gap(32),
                     // 話題の作品
-                    const TrendingAnimeSection(),
-                    const SizedBox(height: 32),
+                    TrendingAnimeSection(
+                      onSeeAllTap: () => onEvent(
+                        const ExplorePageEvent.animeListSectionActionTapped(),
+                      ),
+                    ),
+                    const Gap(32),
                     // 巡礼ランキング
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 24),
-                      child: PilgrimageRankingSection(
+                      child: SpotRankingSection(
                         rankings: mockRankingData,
                       ),
                     ),
-                    const SizedBox(height: 32),
+                    const Gap(32),
                     // 最近のレビュー
-                    const RecentReviewsSection(),
-                    const SizedBox(height: 32),
+                    RecentReviewsSection(
+                      onActionTap: () => onEvent(
+                        const ExplorePageEvent.reviewsSectionActionTapped(),
+                      ),
+                    ),
+                    const Gap(32),
                     // みんなの巡礼
-                    const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 24),
-                      child: CommunityPilgrimageSection(),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      child: CommunitySpotSection(
+                        onActionTap: () => onEvent(
+                          const ExplorePageEvent
+                              .communitySpotSectionActionTapped(),
+                        ),
+                      ),
                     ),
-                    const SizedBox(height: 32),
-                    // おすすめ聖地
-                    const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 24),
-                      child: RecommendedSpotsSection(),
-                    ),
-                    const SizedBox(height: 32),
+                    const Gap(32),
                     // 作品から探す
-                    const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 24),
-                      child: AnimeListSection(),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      child: AnimeListSection(
+                        onActionTap: () => onEvent(
+                          const ExplorePageEvent.animeListSectionActionTapped(),
+                        ),
+                      ),
                     ),
-                    const SizedBox(height: 32),
+                    const Gap(32),
                   ],
                 ),
               ),

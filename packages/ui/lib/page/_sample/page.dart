@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/hook/app_theme.dart';
 import 'package:ui/page/_sample/viewmodel.dart';
 
@@ -54,7 +55,7 @@ class SamplePage extends HookWidget {
                             size: 24,
                           ),
                         ),
-                        const SizedBox(width: 16),
+                        const Gap(16),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -65,7 +66,7 @@ class SamplePage extends HookWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              const SizedBox(height: 4),
+                              const Gap(4),
                               Text(
                                 sample.description,
                                 style: theme.textTheme.bodyMedium?.copyWith(
@@ -77,7 +78,7 @@ class SamplePage extends HookWidget {
                             ],
                           ),
                         ),
-                        const SizedBox(width: 8),
+                        const Gap(8),
                         Icon(
                           Icons.chevron_right,
                           color: color.onSurfaceVariant,

@@ -1,6 +1,7 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/hook/app_theme.dart';
 
 @RoutePage()
@@ -24,14 +25,14 @@ class SavedPage extends HookWidget {
               size: 64,
               color: colorScheme.onSurface,
             ),
-            const SizedBox(height: 16),
+            const Gap(16),
             Text(
               'しおり画面',
               style: textTheme.headlineSmall?.copyWith(
                 color: colorScheme.onSurface,
               ),
             ),
-            const SizedBox(height: 8),
+            const Gap(8),
             Text(
               'お気に入りの聖地を管理します',
               style: textTheme.bodyLarge?.copyWith(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:ui/hook/app_theme.dart';
 
 class AnimeBadge extends HookWidget {
@@ -35,7 +36,7 @@ class AnimeBadge extends HookWidget {
                 color: colorScheme.onSurface,
               ),
             ),
-            const SizedBox(width: 6),
+            const Gap(6),
             DecoratedBox(
               decoration: BoxDecoration(
                 color: colorScheme.primaryContainer,

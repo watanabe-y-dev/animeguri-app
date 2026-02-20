@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import 'package:ui/hook/app_theme.dart';
 
@@ -51,11 +52,11 @@ class ReviewCard extends HookWidget {
                   userName: userName,
                   timeAgo: timeAgo,
                 ),
-                const SizedBox(height: 12),
+                const Gap(12),
                 _StarRating(rating: rating),
-                const SizedBox(height: 12),
+                const Gap(12),
                 _Comment(comment: comment),
-                const SizedBox(height: 12),
+                const Gap(12),
                 _SpotInfo(
                   spotName: spotName,
                   animeName: animeName,
@@ -104,7 +105,7 @@ class _Header extends HookWidget {
             ),
           ),
         ),
-        const SizedBox(width: 8),
+        const Gap(8),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -207,7 +208,7 @@ class _SpotInfo extends HookWidget {
             size: 12,
             color: colorScheme.primary,
           ),
-          const SizedBox(width: 4),
+          const Gap(4),
           Expanded(
             child: Text(
               '$spotName・$animeName',

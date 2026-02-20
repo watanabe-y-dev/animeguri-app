@@ -1,9 +1,12 @@
-import 'package:auto_route/annotations.dart';
+import 'dart:async';
+
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:ui/hook/router.dart';
 import 'package:ui/page/explore/page.dart';
 import 'package:ui/page/explore/viewmodel.dart';
+import 'package:ui/router/app_router.dart';
 
 @RoutePage()
 class ExplorePageConsumer extends HookConsumerWidget {
@@ -30,19 +33,29 @@ class ExplorePageConsumer extends HookConsumerWidget {
 }
 
 void Function(ExplorePageEffect) _useHandleEffect(WidgetRef ref) {
-  return useCallback(
-    (effect) {
-      effect.when(
-        none: () => null,
-        navigateToSearch: () {
-          // TODO: 検索画面への遷移を実装
-        },
-        navigateToNotifications: () {
-          // TODO: 通知画面への遷移を実装
-        },
-      );
-      ref.read(explorePageEffectEmitterProvider.notifier).reset();
-    },
-    [],
-  );
+  final router = useRouter();
+  return (effect) {
+    effect.when(
+      none: () => null,
+      navigateToSearch: () {
+        // TODO: 検索画面への遷移を実装
+      },
+      navigateToNotifications: () {
+        // TODO: 通知画面への遷移を実装
+      },
+      navigateToReviews: () {
+        unawaited(router()?.push(const ReviewsRoute()));
+      },
+      navigateToRecommendedSpots: () {
+        unawaited(router()?.push(const RecommendedSpotsRoute()));
+      },
+      navigateToCommunitySpot: () {
+        unawaited(router()?.push(const CommunitySpotRoute()));
+      },
+      navigateToAnimeList: () {
+        unawaited(router()?.push(const AnimeListRoute()));
+      },
+    );
+    ref.read(explorePageEffectEmitterProvider.notifier).reset();
+  };
 }

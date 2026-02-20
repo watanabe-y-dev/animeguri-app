@@ -1,8 +1,14 @@
 export 'package:ui/page/_sample/consumer.dart';
 export 'package:ui/page/account/account_page.dart';
+export 'package:ui/page/anime_detail/consumer.dart';
+export 'package:ui/page/anime_list/consumer.dart';
+export 'package:ui/page/community_spot/consumer.dart';
 export 'package:ui/page/debug/debug_home.dart';
 export 'package:ui/page/debug/debug_typography.dart';
 export 'package:ui/page/explore/consumer.dart';
 export 'package:ui/page/map/map_page.dart';
+export 'package:ui/page/recommended_spots/consumer.dart';
+export 'package:ui/page/reviews/consumer.dart';
 export 'package:ui/page/root/root_page.dart';
 export 'package:ui/page/saved/saved_page.dart';
+export 'package:ui/page/spot_detail/consumer.dart';

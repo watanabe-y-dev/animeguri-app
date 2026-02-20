@@ -9,13 +9,21 @@ class AnimeCard extends HookWidget {
     super.key,
     required this.imageUrl,
     required this.title,
-    required this.pilgrimageCount,
+    this.subtitle,
+    this.spotCount,
+    this.badge,
+    this.icon,
+    this.width = 140,
     this.onTap,
   });
 
   final String imageUrl;
   final String title;
-  final int pilgrimageCount;
+  final String? subtitle;
+  final int? spotCount;
+  final String? badge;
+  final IconData? icon;
+  final double? width;
   final VoidCallback? onTap;
 
   @override
@@ -23,7 +31,7 @@ class AnimeCard extends HookWidget {
     final colorScheme = useColorScheme();
     final textTheme = useTextTheme();
     return SizedBox(
-      width: 140,
+      width: width,
       child: Material(
         type: MaterialType.card,
         color: colorScheme.surfaceContainerLowest,
@@ -72,6 +80,7 @@ class AnimeCard extends HookWidget {
                       title,
                       style: textTheme.labelLarge?.copyWith(
                         fontSize: 13,
+                        fontWeight: FontWeight.w600,
                         color: colorScheme.onSurface,
                       ),
                       maxLines: 2,
@@ -81,16 +90,21 @@ class AnimeCard extends HookWidget {
                     Row(
                       children: [
                         Icon(
-                          LucideIcons.mapPin,
+                          icon ?? LucideIcons.mapPin,
                           size: 12,
                           color: colorScheme.primary,
                         ),
                         const Gap(4),
-                        Text(
-                          '$pilgrimageCount 聖地',
-                          style: textTheme.labelSmall?.copyWith(
-                            fontSize: 11,
-                            color: colorScheme.onSurfaceVariant,
+                        Expanded(
+                          child: Text(
+                            subtitle ?? '$spotCount 聖地',
+                            style: textTheme.labelSmall?.copyWith(
+                              fontSize: 11,
+                              fontWeight: FontWeight.w500,
+                              color: colorScheme.onSurfaceVariant,
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
                       ],

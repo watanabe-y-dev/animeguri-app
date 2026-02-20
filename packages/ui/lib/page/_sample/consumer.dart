@@ -1,6 +1,5 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:ui/core/widget/async_value_builder.dart';
 import 'package:ui/hook/snackbar.dart';
@@ -26,11 +25,13 @@ class SamplePageConsumer extends HookConsumerWidget {
       appBar: AppBar(
         title: const Text('Sample'),
       ),
-      body: AsyncValueBuilder(
-        data: model,
-        builder: (data) => SamplePage(
-          state: data,
-          onEvent: notifier.onEvent,
+      body: SafeArea(
+        child: AsyncValueBuilder(
+          data: model,
+          builder: (data) => SamplePage(
+            state: data,
+            onEvent: notifier.onEvent,
+          ),
         ),
       ),
     );
@@ -39,17 +40,14 @@ class SamplePageConsumer extends HookConsumerWidget {
 
 void Function(SamplePageEffect) _useHandleEffect(WidgetRef ref) {
   final showSnackbar = useSnackbar();
-  return useCallback(
-    (effect) {
-      effect.when(
-        none: () => null,
-        showSuccessToast: (message) =>
-            showSnackbar(message, type: SnackbarType.success),
-        showErrorToast: (message) =>
-            showSnackbar(message, type: SnackbarType.error),
-      );
-      ref.read(samplePageEffectEmitterProvider.notifier).reset();
-    },
-    [],
-  );
+  return (effect) {
+    effect.when(
+      none: () => null,
+      showSuccessToast: (message) =>
+          showSnackbar(message, type: SnackbarType.success),
+      showErrorToast: (message) =>
+          showSnackbar(message, type: SnackbarType.error),
+    );
+    ref.read(samplePageEffectEmitterProvider.notifier).reset();
+  };
 }
